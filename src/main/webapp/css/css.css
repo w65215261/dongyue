@@ -1,0 +1,6259 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*公共样式与首页样式*/
+
+
+/*A {
+	TEXT-DECORATION: none;
+}
+*/
+
+A:link {
+	color: #010101;
+}
+
+A:visited {
+	color: #010101
+}
+
+A:active {
+	color: #010101
+}
+
+A:hover {
+	COLOR: #ff0000;
+}
+
+BODY {
+	/*FONT-SIZE: 9pt;*/
+	font-size: 14px;
+	background: #f4f4f4;
+	line-height: 24px;
+	margin: 0px;
+	FONT-FAMILY: 微软雅黑;
+	color: #010101;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+input,
+dl,
+dt,
+dd,
+input,
+div,
+ol {
+	margin: 0px;
+	padding: 0px;
+}
+
+input {
+	border: 0px;
+	vertical-align: middle;
+}
+
+img {
+	border: 0px;
+	vertical-align: middle;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	outline: none;
+}
+
+input,
+button,
+select,
+textarea {
+	outline: none;
+	color: #010101;
+	FONT-FAMILY: 微软雅黑;
+	font-size: 14px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	height: 0px;
+	font-size: 0px;
+}
+
+.main {
+	width: 965px;
+	margin: 0px auto;
+}
+
+.top1 {
+	width: 100%;
+	background: #FFFFFF;
+	height: 80px;
+	line-height: 80px;
+	position: relative;
+	z-index: 20;
+	opacity: 0.95;
+}
+
+a.logo {
+	float: left;
+	margin-left: 20px;
+	margin-top: 15px;
+	background: url(../img/logo.png) center center no-repeat;
+	background-size: 180px 50px;
+	width: 180px;
+	height: 50px;
+}
+
+.menu {
+	height: 80px;
+	float: right;
+}
+
+.menu li {
+	/*height: 80px;*/
+	float: left;
+	font-size: 16px;
+	font-family: '微软雅黑', Arial;
+	padding: 0px 10px;
+	cursor: pointer;
+}
+
+.menu li.yy a {
+	color: #010101;
+}
+
+.menu li.yy a:hover {
+	color: #ff0000;
+}
+
+.menu li.an {
+	width: 40px;
+	position: relative;
+	margin: 0px;
+}
+
+.menu li.on {
+	background: #717170;
+}
+
+.menu li.an span.user {
+	background: url(../img/user.png) center center no-repeat;
+	display: block;
+	height: 80px;
+	cursor: pointer;
+}
+
+.ssk {
+	width: 195px;
+	height: 40px;
+	position: absolute;
+	top: 50px;
+	left: -155px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns_han_11.png);
+	display: none;
+}
+
+.ssn {
+	width: 185px;
+	height: 30px;
+	float: left;
+	background: #eeeeee;
+	margin: 5px;
+}
+
+.ssn .tx1 {
+	float: left;
+	width: 150px;
+	padding: 0px;
+	margin: 0px 0px 0px 8px;
+	height: 30px;
+}
+
+.ssn .an1 {
+	float: right;
+	margin: 10px 10px 0px 0px;
+}
+
+.ban {
+	width: 100%;
+	position: relative;
+	margin-top: 80px;
+}
+
+.ban img {
+	width: 100%;
+	display: block;
+}
+
+.lm4 {
+	width: 100%;
+	padding: 30px 0px;
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns9_12.png)
+}
+
+.lm4 a {
+	display: inline-block;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns9_05.png);
+	width: 184px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	font-size: 18px;
+	font-family: 'qingke';
+	margin: 0px 10px;
+	font-weight: bold;
+}
+
+.main {
+	width: 960px;
+	margin: 50px auto;
+}
+
+.dqwz {
+	padding: 10px 0px;
+	font-size: 14px;
+}
+
+.bt1 {
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-family: 'qingke';
+	font-size: 24px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/xbj.png) center center no-repeat;
+	font-weight: bold;
+}
+
+.nr1 {
+	padding: 10px 0px 35px 0px;
+	font-size: 16px;
+}
+
+/* a.m1 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns1_17.png);
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	display: inline-block;
+} */
+
+.more1 {
+	padding-top: 25px;
+	text-align: right;
+}
+
+.lb1 {
+	width: 960px;
+	margin: 0px auto;
+	padding: 70px 0px 90px 0px;
+}
+
+.lb1 ul {
+	width: 900px;
+	margin: 0px auto;
+}
+
+.lb1 li {
+	width: 300px;
+	float: left;
+	text-align: center;
+	height: 125px;
+}
+
+.lb1 li p {
+	font-family: 'qingke';
+	font-size: 15px;
+	padding-top: 8px;
+	font-weight: bold;
+}
+
+.lb1_2 {
+	width: 960px;
+	margin: 0px auto;
+	padding: 40px 0px 20px 0px;
+}
+
+.lb1_2 ul {
+	width: 960px;
+	margin: 0px auto;
+}
+
+.lb1_2 li {
+	width: 240px;
+	float: left;
+	text-align: center;
+	height: 125px;
+}
+
+.lb1_2 li:hover .stb1,
+.lb1_2 li:hover .stb2,
+.lb1_2 li:hover .stb3,
+.lb1_2 li:hover .stb4,
+.lb1_2 li:hover .stb5,
+.lb1_2 li:hover .stb6,
+.lb1_2 li:hover .stb7,
+.lb1_2 li:hover .stb8,
+.lb1_2 li:hover .stb9,
+.lb1_2 li:hover .stb10,
+.lb1_2 li:hover .stb11,
+.lb1_2 li:hover .stb12,
+.lb1_2 li:hover .stb13,
+.lb1_2 li:hover .stb14,
+.lb1_2 li:hover .stb15,
+.lb1 li:hover .tb1,
+.lb1 li:hover .tb2,
+.lb1 li:hover .tb3,
+.lb1 li:hover .tb4,
+.lb1 li:hover .tb5,
+.lb1 li:hover .tb6 {
+	opacity: 0.5;
+	filter: "alpha(opacity=50)";
+	-ms-filter: "alpha(opacity=50)";
+}
+
+.lb1_2 li a:hover,
+.lb1_2 li a:hover p,
+.lb1 li a:hover,
+.li1 li a:hover p {
+	color: black;
+}
+
+.lb1_2 li p {
+	font-family: 'qingke';
+	font-size: 15px;
+	padding-top: 5px;
+	font-weight: bold;
+}
+
+.stb1 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_09.png);
+	width: 82px;
+	height: 82px;
+	display: inline-block;
+}
+
+.stb2 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_11.png);
+	width: 82px;
+	height: 82px;
+	display: inline-block;
+}
+
+.stb3 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_13.png);
+	width: 82px;
+	height: 82px;
+	display: inline-block;
+}
+
+.stb4 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_16.png);
+	width: 82px;
+	height: 82px;
+	display: inline-block;
+}
+
+.stb5 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_37.png);
+	width: 82px;
+	height: 82px;
+	display: inline-block;
+}
+
+.stb6 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_39.png);
+	width: 82px;
+	height: 82px;
+	display: inline-block;
+}
+
+.stb7 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_41.png);
+	width: 82px;
+	height: 82px;
+	display: inline-block;
+}
+
+.stb8 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_43.png);
+	width: 82px;
+	height: 82px;
+	display: inline-block;
+}
+
+.stb9 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_66.png);
+	width: 82px;
+	height: 82px;
+	display: inline-block;
+}
+
+.stb10 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_68.png);
+	width: 82px;
+	height: 82px;
+	display: inline-block;
+}
+
+.stb11 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_70.png);
+	width: 82px;
+	height: 82px;
+	display: inline-block;
+}
+
+.stb12 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_72.png);
+	width: 82px;
+	height: 82px;
+	display: inline-block;
+}
+
+.stb13 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_98.png);
+	width: 82px;
+	height: 82px;
+	display: inline-block;
+}
+
+.stb14 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_101.png);
+	width: 82px;
+	height: 82px;
+	display: inline-block;
+}
+
+.stb15 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_104.png);
+	width: 82px;
+	height: 82px;
+	display: inline-block;
+}
+
+.tb1 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns1_24.png);
+	width: 82px;
+	height: 82px;
+	display: inline-block;
+}
+
+.tb2 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_66.png);
+	width: 82px;
+	height: 82px;
+	display: inline-block;
+}
+
+.tb3 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_104.png);
+	width: 82px;
+	height: 82px;
+	display: inline-block;
+}
+
+.tb4 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns12_03.png);
+	width: 82px;
+	height: 82px;
+	display: inline-block;
+}
+
+.tb5 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns12_05.png);
+	width: 82px;
+	height: 82px;
+	display: inline-block;
+}
+
+.tb6 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns12_07.png);
+	width: 82px;
+	height: 82px;
+	display: inline-block;
+}
+
+.nn {
+	padding: 30px 0px 60px 0px;
+}
+
+.nn .imgk {
+	width: 365px;
+}
+
+.nn .imgk img {
+	width: 365px;
+	height: 275px;
+}
+
+.nn_1 {
+	width: 365px;
+	float: left;
+}
+
+.nn_2 {
+	width: 365px;
+	float: right;
+}
+
+.h1_bt1 {
+	font-family: 'qingke';
+	font-size: 20px;
+	display: block;
+	font-weight: normal;
+	padding-bottom: 25px;
+}
+
+.n1 {
+	padding: 25px 0px 20px 0px;
+	font-size: 14px;
+}
+
+.n1 li {
+	height: 26px;
+	line-height: 26px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns1_40.jpg) left no-repeat;
+	padding-left: 10px;
+}
+
+.n2 {
+	width: 960px;
+	margin: 0px auto;
+	overflow: hidden;
+	padding: 25px 0px 30px 0px;
+}
+
+.n2 ul {
+	width: 1000px;
+}
+
+.n2 li {
+	width: 219px;
+	height: 200px;
+	float: left;
+	margin-right: 28px;
+	text-align: center;
+}
+
+.n2 li img {
+	display: block;
+	width: 219px;
+	height: 152px;
+}
+
+.n2 li p {
+	font-family: 'qingke';
+	font-size: 14px;
+	padding-top: 8px;
+}
+
+.foot {
+	padding: 10px 0px;
+	border-top: dotted 1px #929292;
+	color: #b2b2b2;
+	font-size: 14px;
+	font-family: Arial, 宋体;
+}
+
+.foot a {
+	color: #b2b2b2;
+}
+
+.foot span.s1 {
+	float: left;
+}
+
+.foot span.fx {
+	float: right;
+}
+
+.foot span.fx img {
+	margin-left: 3px;
+	filter: alpha(opacity=30);
+	-moz-opacity: 0.30;
+	opacity: 0.30;
+}
+
+.foot span.fx img:hover {}
+
+
+/*filter:alpha(opacity=100); -moz-opacity:1; opacity:1;*/
+
+.kj_r {
+	position: fixed;
+	right: 10px;
+	top: 80px;
+	z-index: 888;
+	width: 64px;
+}
+
+.kj_a1 {
+	width: 64px;
+	height: 64px;
+	float: left;
+	margin-bottom: 12px;
+}
+
+.kj_a1 a {
+	display: block;
+	height: 64px;
+	line-height: 64px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns_r2_08.png);
+}
+
+.kj_a1 a.on {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns_r_08.png);
+}
+
+.kj_a2 {
+	width: 64px;
+	float: left;
+}
+
+.kj_a2 span.s1 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns_r_03.png);
+	width: 64px;
+	height: 14px;
+	float: left;
+}
+
+.kj_a2 span.s2 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns_r_05.png);
+	width: 64px;
+	height: 29px;
+	float: left;
+	display: block;
+	cursor: pointer;
+}
+
+.kj_a2 span.s2on {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns_r_05_.png);
+	width: 64px;
+	height: 29px;
+	float: left;
+	display: none;
+	cursor: pointer;
+}
+
+.kj_a2 span.s3 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns_r_06.png);
+	width: 64px;
+	height: 15px;
+	float: left;
+}
+
+#ka2 {
+	float: left;
+	width: 64px;
+	display: none;
+}
+
+#ka2 li {
+	float: left;
+	width: 64px;
+	height: 70px;
+	margin: 5px 0px;
+	text-align: center;
+}
+
+#ka2 li p {
+	padding-top: 0px;
+	font-family: 微软雅黑;
+	line-height: 22px;
+}
+
+.ktb1 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns_r_11.png);
+	width: 42px;
+	height: 35px;
+	display: inline-block;
+}
+
+.ktb2 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns_r_14.png);
+	width: 42px;
+	height: 37px;
+	display: inline-block;
+}
+
+.ktb3 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns_r_16.png);
+	width: 42px;
+	height: 32px;
+	display: inline-block;
+}
+
+.ktb4 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns_r_18.png);
+	width: 42px;
+	height: 43px;
+	display: inline-block;
+}
+
+.ktb5 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns_r_20.png);
+	width: 42px;
+	height: 34px;
+	display: inline-block;
+}
+
+
+.ny_1 {
+	width: 150px;
+	float: left;
+	margin-top: 42px;
+}
+
+.ny_2 {
+	width: 790px;
+	float: right;
+}
+
+.ny_3 {
+	width: 180px;
+	float: left;
+	margin-top: 26px;
+}
+
+.ny_4 {
+	width: 760px;
+	float: right;
+}
+
+.lm1 {
+	border-bottom: solid 1px #7a7a7a;
+	border-top: solid 1px #7a7a7a;
+	padding: 10px 0px 10px 20px;
+	font-size: 16px;
+	font-family: 'qingke';
+}
+
+.lm1 li {
+	height: 28px;
+	line-height: 28px;
+}
+
+.lm1 li a.crt {
+	color: #FF0000;
+}
+
+.lm1_2 {
+	border-bottom: solid 1px #7a7a7a;
+	border-top: solid 1px #7a7a7a;
+	padding: 10px 0px 10px 20px;
+	font-size: 16px;
+	font-family: 'qingke';
+}
+
+.lm1_2 li {
+	height: 40px;
+	line-height: 40px;
+}
+
+.bt2 {
+	height: 35px;
+	border-top: dotted 1px #cccccc;
+	line-height: 35px;
+	position: relative;
+}
+
+.bt2 span {
+	width: 180px;
+	text-align: center;
+	left: 300px;
+	font-size: 24px;
+	font-family: 'qingke';
+	background: #f4f4f4;
+	display: inline-block;
+	top: -20px;
+	height: 35px;
+	position: absolute;
+}
+
+.nr2 {
+	padding: 50px 0px 0px 0px;
+	font-size: 14px;
+}
+
+.lm2 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns3_03.png);
+	height: 46px;
+	line-height: 46px;
+	overflow: hidden;
+}
+
+.lm2 li {
+	float: left;
+	height: 46px;
+	margin-right: 1px;
+}
+
+.lm2 li a {
+	display: block;
+	height: 46px;
+	padding: 0px 30px;
+	font-size: 15px;
+	font-family: 'qingke';
+}
+
+.lm2 li a:hover,
+.lm2 li a.on {
+	background: #f02222;
+	color: #ffffff;
+}
+
+.jg1 {
+	height: 30px;
+}
+
+.bt3 {
+	padding-bottom: 5px;
+	border-bottom: dotted 1px #b0b0b0;
+	font-size: 18px;
+	font-family: 'qingke';
+}
+
+.n3 {
+	padding: 20px 0px 20px 0px;
+	padding-bottom: 20px;
+	border-bottom: dotted 1px #b0b0b0;
+}
+
+.n3 li {
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	text-align: right;
+	font-family: Arial, 宋体;
+}
+
+.n3 li a {
+	float: left;
+	text-align: left;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns3_07.png) left no-repeat;
+	padding-left: 15px;
+}
+
+.n3_2 {
+	padding: 20px 0px 20px 0px;
+	border-bottom: dotted 1px #b0b0b0;
+}
+
+.n3_2 li {
+	height: 38px;
+	line-height: 38px;
+	font-size: 14px;
+	font-family: Arial, 宋体;
+}
+
+.n3_2 li a {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns3_07.png) left no-repeat;
+	padding-left: 15px;
+}
+
+.fy1 {
+	text-align: center;
+	font-size: 14px;
+	padding: 30px 0px 0px 0px;
+	font-family: Arial, 宋体;
+}
+
+.fy1 a {
+	margin: 0px 10px;
+}
+
+.fy1 .current {
+	color: red;
+	font-size: 14px;
+	margin: 0px 10px;
+}
+
+.fy2 {
+	text-align: right;
+	font-size: 14px;
+	padding: 30px 0px 0px 0px;
+	font-family: Arial, 宋体;
+}
+
+.fy2 a {
+	margin: 0px 10px;
+}
+
+.fy2 .current {
+	color: red;
+	font-size: 14px;
+	margin: 0px 10px;
+}
+
+.n4 {}
+
+.n4 li {
+	padding: 35px 0px 35px 0px;
+	border-bottom: dotted 1px #b0b0b0;
+}
+
+.n4 .imgk {
+	width: 315px;
+	float: left;
+}
+
+.n4 .imgk img {
+	width: 315px;
+	height: 220px;
+	display: block;
+}
+
+.n4 .txtk {
+	width: 440px;
+	float: right;
+}
+
+.n4 .txtk a.dbt {
+	font-size: 18px;
+	font-family: 'qingke';
+	font-weight: bold;
+}
+
+.n4 .txtk p {
+	padding: 15px 0px 20px 0px;
+	font-size: 14px;
+	line-height: 22px;
+	color: #707070;
+	text-indent: 2em;
+}
+
+.n4 .txtk p a {
+	color: #707070;
+}
+
+.bt4 {
+	font-size: 18px;
+	font-family: 'qingke';
+	text-align: center;
+	border-bottom: dotted 1px #b0b0b0;
+	padding: 40px 0px 10px 0px;
+	font-weight: bold;
+}
+
+.bt4_2 {
+	font-size: 18px;
+	font-family: 'qingke';
+	border-bottom: dotted 1px #b0b0b0;
+	padding: 20px 0px 15px 0px;
+}
+
+.nr3 {
+	font-size: 16px;
+	padding: 10px 0px 50px 0px;
+	text-align: center;
+}
+
+.lb2 {
+	width: 960px;
+	margin: 0px auto;
+	overflow: hidden;
+	margin-top: 40px;
+}
+
+.lb2 ul {
+	width: 1000px;
+}
+
+.lb2 li {
+	width: 460px;
+	height: 270px;
+	float: left;
+	margin-right: 40px;
+}
+
+.lb2 .imgk {
+	width: 260px;
+	float: left;
+}
+
+.lb2 .imgk img {
+	width: 260px;
+	height: 195px;
+}
+
+.lb2 .txtk {
+	width: 180px;
+	float: right;
+	height: 195px;
+	position: relative;
+}
+
+.lb2 .txtk a.m1 {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+
+.lb2 .txtk a.dbt {
+	font-size: 18px;
+	font-family: 'qingke';
+}
+
+.lb2 .txtk p {
+	padding: 10px 0px 20px 0px;
+	color: #707070;
+	line-height: 20px;
+}
+
+.lm3 {
+	border-bottom: solid 1px #7a7a7a;
+	border-top: solid 1px #7a7a7a;
+	padding: 10px 0px 10px 20px;
+	font-size: 14px;
+	font-family: 'qingke';
+}
+
+.lm3 ul {
+	padding-bottom: 20px;
+}
+
+.lm3 li {
+	height: 28px;
+	line-height: 28px;
+	padding-left: 20px;
+}
+
+.lm3 li a {
+	color: #666;
+}
+
+.lm3 li a:hover,
+.lm3 li a.crt,
+.lm3 h1 a.crt {
+	color: #ff0000;
+}
+
+h1.h1_bt2 {
+	display: block;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 26px;
+}
+
+.wh {
+	width: 1000px;
+	margin: 0px auto;
+	padding: 0px 0px 30px 0px;
+}
+
+.wh .mb {
+	position: absolute;
+	left: 0;
+	top: 0px;
+	background: black;
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.60;
+	opacity: 0.60;
+	width: 1000px;
+	height: 429px;
+	z-index: 999;
+	display: none;
+}
+
+.wh img {
+	width: 1000px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+
+/*.wh a:hover img{filter:alpha(opacity=60); -moz-opacity:0.60; opacity:0.60;}*/
+
+.main2 {
+	width: 85%;
+	margin: 0px auto;
+}
+
+.wh2 {
+	padding: 40px 0px 30px 0px;
+	border-bottom: dotted 1px #929292;
+}
+
+.wh2_1 {
+	width: 190px;
+	float: left;
+	margin-left: 80px;
+}
+
+.wh2_1 .imgk {
+	padding-bottom: 25px;
+	border-bottom: solid 1px #d4d4d4;
+}
+
+.wh2_1 .txtk {
+	padding-top: 30px;
+	line-height: 20px;
+	color: #707070;
+}
+
+.wh2_2 {
+	width: 730px;
+	float: right;
+	margin-right: 120px;
+}
+
+.nr5 {
+	font-size: 14px;
+	line-height: 35px;
+}
+
+.zt1 {
+	font-size: 24px;
+	font-family: 'qingke';
+}
+
+.lm5 {
+	width: 1200px;
+	margin: 0px auto;
+	padding: 60px 0px 0px 0px;
+}
+
+.lm5 ul {
+	padding-left: 40px;
+}
+
+.lm5 li {
+	float: left;
+	width: 139px;
+	text-align: center;
+	height: 330px;
+	font-size: 18px;
+	font-family: 'qingke';
+	margin: 0px 40px;
+}
+
+.lm5 li img {
+	width: 139px;
+	height: 139px;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.foot2 .foot {
+	width: 1200px;
+}
+
+.lb3 {
+	width: 960px;
+	margin: 0px auto;
+	overflow: hidden;
+	padding: 50px 0px 0px 0px;
+}
+
+.lb3 ul {}
+
+.lb3 li {
+	width: 960px;
+	height: 320px;
+}
+
+.lb3 .imgk {
+	width: 370px;
+	float: left;
+}
+
+.lb3 .imgk img {
+	width: 370px;
+	height: 230px;
+}
+
+.lb3 .txtk {
+	width: 565px;
+	float: right;
+	height: 210px;
+	margin-top: 20px;
+	position: relative;
+}
+
+.lb3 .txtk a.m1 {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+
+.lb3 .txtk a.dbt {
+	font-size: 18px;
+	font-family: 'qingke';
+}
+
+.lb3 .txtk p {
+	padding: 15px 0px 20px 0px;
+	color: #333;
+	line-height: 24px;
+	font-size: 14px;
+	font-family: 微软雅黑;
+}
+
+.dz {
+	padding: 50px 0px 60px 0px;
+}
+
+.dz img {
+	width: 960px;
+	display: block;
+}
+
+.lb4 {
+	width: 960px;
+	margin: 0px auto;
+	overflow: hidden;
+	padding: 50px 0px 80px 0px;
+}
+
+.lb4 ul {
+	width: 970px;
+}
+
+.lb4 li {
+	width: 190px;
+	height: 266px;
+	float: left;
+	position: relative;
+	margin-right: 2px;
+	background: #000000;
+}
+
+.lb4 li img {
+	width: 190px;
+	height: 266px;
+}
+
+.lb4 li:hover img {
+	filter: alpha(opacity=85);
+	-moz-opacity: 0.85;
+	opacity: 0.85;
+}
+
+.lb4 li .txtk {
+	position: absolute;
+	width: 190px;
+	padding: 8px 0px 3px 0px;
+	text-align: center;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns12_38.png);
+	bottom: 0px;
+	left: 0px;
+}
+
+.lb4 li .txtk p {
+	font-size: 16px;
+	font-family: 'qingke';
+	color: #ffffff;
+	line-height: 30px;
+}
+
+.tb7 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns12_1_03.png);
+	width: 21px;
+	height: 21px;
+	line-height: 21px;
+	display: inline-block;
+}
+
+.tt1 {
+	padding: 25px 0px 50px 0px;
+}
+
+.tt1 .imgk {
+	width: 350px;
+	float: left;
+}
+
+.tt1 .imgk img {
+	width: 350px;
+	height: 220px;
+}
+
+.tt1 .txtk {
+	width: 410px;
+	float: right;
+	font-size: 14px;
+}
+
+.tt1 .txtk p {
+	padding-bottom: 27px;
+}
+
+a.cd_2 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns13_06.jpg);
+	width: 228px;
+	height: 45px;
+	line-height: 45px;
+	display: inline-block;
+}
+
+.jdk {
+	background: #fafafa;
+	padding: 30px 10px;
+}
+
+h1.h1_bt3 {
+	border-bottom: dotted 1px #969696;
+	font-size: 18px;
+	font-family: 'qingke';
+	line-height: normal;
+	padding-bottom: 5px;
+	font-weight: normal;
+}
+
+.jdnr1 {
+	font-size: 14px;
+	padding: 20px 0px 10px 0px;
+}
+
+.lb5 {
+	width: 770px;
+	overflow: hidden;
+	padding: 32px 0px 0px 0px;
+}
+
+.lb5 ul {
+	width: 780px;
+}
+
+.lb5 li {
+	width: 365px;
+	height: 210px;
+	float: left;
+	margin-right: 12px;
+}
+
+.lb5 .imgk {
+	width: 200px;
+	float: left;
+}
+
+.lb5 .imgk img {
+	width: 200px;
+	height: 142px;
+}
+
+.lb5 .txtk {
+	width: 152px;
+	float: right;
+	height: 142px;
+	position: relative;
+}
+
+.lb5 .txtk a.m2 {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+
+.lb5 .txtk a.dbt {
+	font-size: 18px;
+	font-family: 'qingke';
+}
+
+.lb5 .txtk p {
+	padding: 10px 0px 20px 0px;
+	color: #707070;
+	line-height: 20px;
+}
+
+a.m2 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns13_1_03.png);
+	width: 21px;
+	height: 21px;
+	line-height: 21px;
+	display: inline-block;
+}
+
+.p1 {
+	width: 770px;
+	overflow: hidden;
+	padding: 32px 0px 0px 0px;
+}
+
+.p1 ul {
+	width: 780px;
+}
+
+.p1 li {
+	float: left;
+	width: 147px;
+	height: 220px;
+	margin: 0px 35px 0px 10px;
+}
+
+.p1 .imgk {
+	height: 135px;
+}
+
+.p1 .imgk img {
+	width: 145px;
+	height: 130px;
+	border: solid 1px #e5e5e5;
+}
+
+.p1 a {
+	display: block;
+	font-size: 14px;
+}
+
+.p1 u {
+	color: #ff0000;
+}
+
+h1.h1_bt4 {
+	font-size: 18px;
+	font-family: 'qingke';
+	line-height: normal;
+	padding-bottom: 25px;
+	font-weight: normal;
+}
+
+.nr4 {
+	font-size: 14px;
+	border-bottom: dotted 1px #929292;
+	padding-bottom: 50px;
+	margin-bottom: 40px;
+}
+
+.jg2 {
+	height: 15px;
+}
+
+.pic1_bt {
+	padding: 10px 0px 40px 0px;
+}
+
+a.xbt {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns13_1_03.png) right no-repeat;
+	font-size: 14px;
+	padding-right: 30px;
+	display: inline-block;
+	height: 24px;
+	line-height: 24px;
+	font-family: 'qingke';
+}
+
+.pic1 {
+	height: 342px;
+	width: 790px;
+	overflow: hidden;
+	position: relative;
+}
+
+.pic1 ul {
+	height: 342px;
+}
+
+.pic1 li {
+	float: left;
+	width: 790px;
+	height: 342px;
+}
+
+.pic1 li img {
+	width: 790px;
+	height: 342px;
+}
+
+.pic1 a.cd_left {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns14_06.png);
+	width: 37px;
+	height: 37px;
+	line-height: 37px;
+	position: absolute;
+	right: 55px;
+	bottom: 15px;
+}
+
+.pic1 a.cd_right {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns14_08.png);
+	width: 37px;
+	height: 37px;
+	line-height: 37px;
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+}
+
+.jdk2 {
+	border-top: dotted 1px #929292;
+	padding: 30px 0px 50px 0px;
+}
+
+.jdk2 .nr2 {
+	padding: 0px;
+}
+
+.ban2 {
+	padding-bottom: 45px;
+}
+
+.ban2 img {
+	width: 760px;
+	display: block;
+}
+
+.bt5 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns15_16.png);
+	height: 29px;
+	line-height: 29px;
+}
+
+.bt5 span {
+	font-size: 24px;
+	font-family: 'qingke';
+	background: #f4f4f4;
+	display: inline-block;
+	height: 29px;
+	padding-right: 30px;
+	font-weight: bold;
+}
+
+.lb6 {
+	width: 760px;
+	overflow: hidden;
+	padding: 35px 0px 15px 0px;
+}
+
+.lb6 ul {
+	width: 810px;
+}
+
+.lb6 li {
+	width: 362px;
+	height: 288px;
+	float: left;
+	margin-right: 37px;
+	text-align: center;
+}
+
+.lb6 img {
+	width: 362px;
+	height: 222px;
+	display: block;
+}
+
+.lb6 p {
+	padding-top: 12px;
+	font-size: 14px;
+}
+
+.zj {
+	padding: 0px 0px 40px 0px;
+}
+
+.zj .more1 {
+	padding: 0px;
+}
+
+.zj_1 {
+	width: 362px;
+	float: left;
+}
+
+.zj_2 {
+	width: 362px;
+	float: right;
+}
+
+.n5 {
+	width: 362px;
+	overflow: hidden;
+	padding: 25px 0px 30px 0px;
+}
+
+.n5 ul {
+	font-size: 14px;
+	width: 370px;
+}
+
+.n5 li {
+	width: 180px;
+	float: left;
+	height: 24px;
+	margin-right: 2px;
+}
+
+.n5 a {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns3_07.png) left no-repeat;
+	padding-left: 12px;
+}
+
+.n6 {
+	padding: 25px 0px 30px 0px;
+}
+
+.n6 ul {
+	font-size: 14px;
+}
+
+.n6 li {
+	height: 24px;
+}
+
+.n6 a {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns3_07.png) left no-repeat;
+	padding-left: 12px;
+}
+
+.zj2 {
+	padding: 35px 0px 0px 0px;
+}
+
+.zj2 .txtk {
+	width: 365px;
+	float: left;
+}
+
+.zj2 .txtk .nr2 {
+	padding: 0px;
+}
+
+.zj2 .imgk {
+	width: 366px;
+	float: right;
+}
+
+.zj2 .imgk img {
+	width: 366px;
+}
+
+.lb6_2 {
+	width: 760px;
+	overflow: hidden;
+	padding: 35px 0px 15px 0px;
+}
+
+.lb6_2 ul {
+	width: 810px;
+}
+
+.lb6_2 li {
+	width: 362px;
+	height: 310px;
+	float: left;
+	margin-right: 37px;
+}
+
+.lb6_2 img {
+	width: 362px;
+	height: 222px;
+	display: block;
+}
+
+.lb6_2 p {
+	padding-top: 12px;
+	font-size: 14px;
+}
+
+.lb6_3 {
+	width: 760px;
+	overflow: hidden;
+	padding: 35px 0px 15px 0px;
+}
+
+.lb6_3 ul {}
+
+.lb6_3 li {
+	height: 178px;
+}
+
+.lb6_3 .imgk {
+	width: 200px;
+	float: left;
+}
+
+.lb6_3 .imgk img {
+	width: 200px;
+	height: 140px;
+}
+
+.lb6_3 .txtk {
+	width: 525px;
+	float: right;
+	position: relative;
+	height: 140px;
+}
+
+.lb6_3 .txtk a.dbt {
+	font-size: 18px;
+}
+
+.lb6_3 .txtk p {
+	padding: 5px 0px;
+	line-height: 20px;
+}
+
+.lb6_3 .cd_3 {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+
+.lb6_3 .more1 {
+	padding: 0px;
+}
+
+a.cd_3 {
+	padding: 0px 20px;
+	background: #ffffff;
+	height: 28px;
+	line-height: 28px;
+	border: solid 1px #dddddd;
+	display: inline-block;
+	font-size: 14px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.lb7 {
+	width: 760px;
+	overflow: hidden;
+	padding: 35px 0px 15px 0px;
+}
+
+.lb7 ul {
+	width: 810px;
+}
+
+.lb7 li {
+	width: 172px;
+	height: 172px;
+	float: left;
+	text-align: center;
+	margin-right: 20px;
+}
+
+.lb7 li img {
+	width: 172px;
+	height: 123px;
+	display: block;
+}
+
+.lb7 li p {
+	padding-top: 8px;
+	font-size: 14px;
+}
+
+.lb7 .more1 {
+	padding: 0px;
+}
+
+.tt2 {
+	padding: 35px 0px 50px 0px;
+}
+
+.tt2 .imgk {
+	width: 362px;
+	height: 222px;
+	float: left;
+}
+
+.tt2 .imgk img {
+	width: 362px;
+	height: 222px;
+	display: block;
+}
+
+.tt2 .txtk {
+	width: 365px;
+	float: right;
+}
+
+.tt2 .n6 {
+	padding: 8px 0px 33px 0px;
+}
+
+.tt2 .more1 {
+	padding: 0px;
+}
+
+.gd1 {
+	position: relative;
+	padding: 60px 0px 20px 0px;
+}
+
+.gd1 li {
+	float: left;
+	width: 760px;
+	height: 535px;
+	overflow: hidden;
+}
+
+.gd1 dl {
+	width: 790px;
+}
+
+.gd1 dd {
+	float: left;
+	width: 175px;
+	height: 170px;
+	margin-right: 18px;
+}
+
+.gd1 dd .imgk {
+	text-align: center;
+	height: 88px;
+	width: 175px;
+	background: #ffffff;
+	border: solid 1px #dddddd;
+	line-height: 88px;
+}
+
+.gd1 dd .imgk img {
+	max-height: 80px;
+	max-width: 150px;
+	vertical-align: middle;
+}
+
+.gd1 dd p {
+	font-size: 14px;
+	line-height: 20px;
+	padding-top: 12px;
+}
+
+.gd1 a.cd_left {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns17_07.png);
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	position: absolute;
+	right: 40px;
+	top: 5px;
+}
+
+.gd1 a.cd_right {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns17_09.png);
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	position: absolute;
+	right: 0px;
+	top: 5px;
+}
+
+.p2 {
+	width: 760px;
+	overflow: hidden;
+}
+
+.p2 dl {
+	width: 790px;
+}
+
+.p2 dd {
+	float: left;
+	width: 140px;
+	line-height: 30px;
+	margin-right: 14px;
+}
+
+.p2 dd .imgk {
+	text-align: center;
+	height: 75px;
+	width: 140px;
+	background: #ffffff;
+	border: solid 1px #dddddd;
+	line-height: 75px;
+}
+
+.p2 dd .imgk img {
+	max-height: 70px;
+	max-width: 120px;
+	vertical-align: middle;
+}
+
+.jy1 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns20_05.jpg) center center no-repeat;
+	height: 440px;
+	position: relative;
+}
+
+.jy1n {
+	width: 320px;
+	position: absolute;
+	right: 56px;
+	top: 52px;
+}
+
+h1.h1_bt5 {
+	display: block;
+	font-size: 18px;
+	font-family: 'qingke';
+	color: #ffffff;
+	font-weight: normal;
+}
+
+.n7 {
+	padding: 5px 0px;
+}
+
+.n7 li {
+	padding: 10px 0px;
+	color: #ffffff;
+}
+
+.n7 span.s1 {
+	font-weight: bold;
+}
+
+.n7 span.s2 {
+	color: #ff0000;
+}
+
+.more2 {
+	text-align: center;
+}
+
+a.m3 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns21_03.png);
+	width: 27px;
+	height: 27px;
+	line-height: 27px;
+	display: inline-block;
+}
+
+.lb4_2 {
+	width: 960px;
+	margin: 0px auto;
+	overflow: hidden;
+	padding: 50px 0px 80px 0px;
+}
+
+.lb4_2 ul {
+	width: 980px;
+}
+
+.lb4_2 li {
+	width: 310px;
+	height: 356px;
+	float: left;
+	position: relative;
+	margin-right: 12px;
+	background: #000000;
+}
+
+.lb4_2 li img {
+	width: 310px;
+	height: 356px;
+}
+
+.lb4_2 li:hover img {
+	filter: alpha(opacity=85);
+	-moz-opacity: 0.85;
+	opacity: 0.85;
+}
+
+.lb4_2 li .txtk {
+	position: absolute;
+	width: 310px;
+	height: 140px;
+	font-family: Arial, 宋体;
+	line-height: 22px;
+	text-align: left;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/hdj.png);
+	bottom: 0px;
+	left: 0px;
+}
+
+.lb4_2 li .txtk p.p_1 {
+	font-size: 16px;
+	font-family: 'qingke';
+	color: #ffffff;
+	padding: 8px 20px 0px 20px;
+}
+
+.lb4_2 li .txtk p.p_2 {
+	font-size: 12px;
+	color: #ffffff;
+	padding: 0px 20px 0px 20px;
+}
+
+.lb4_2 li .txtk p.p_3 {
+	font-size: 12px;
+	color: #ffffff;
+	line-height: 18px;
+	padding-bottom: 5px;
+	padding: 0px 20px 3px 20px;
+}
+
+.lb4_2 li .txtk .tb7 {
+	margin-left: 140px;
+}
+
+.qy {
+	width: 100%;
+	height: 824px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/zxbj.jpg) center no-repeat;
+	background-size: 100% 100%;
+}
+
+.qy .main {
+	height: 824px;
+	position: relative;
+}
+
+.qy .bt1 {
+	position: absolute;
+	top: 20px;
+	color: #ffffff;
+	width: 100%;
+}
+
+.qy .qyn {
+	width: 500px;
+	height: 545px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/hdj.png);
+	position: absolute;
+	right: 45px;
+	top: 125px;
+}
+
+.qy .ss2 {
+	width: 480px;
+	border-bottom: dotted 1px #9c9c9c;
+	padding: 20px 0px 10px 0px;
+	height: 24px;
+	margin: 0px auto;
+	color: #ffffff;
+	font-size: 14px;
+}
+
+.qy .ss2 span.s1 {
+	width: 155px;
+	float: left;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.qy .ss2 .tx2 {
+	float: left;
+	margin-left: 5px;
+}
+
+.qy .ss2 .an2 {
+	float: left;
+	margin-left: 10px;
+}
+
+.qy h1 {
+	display: block;
+	padding-left: 30px;
+	color: #ffffff;
+	font-size: 18px;
+	padding-bottom: 15px;
+	font-family: 'qingke';
+	font-weight: normal;
+}
+
+.tx2 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns22_03.png);
+	width: 106px;
+	height: 24px;
+	line-height: 24px;
+	padding-left: 5px;
+}
+
+.an2 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns22_06.png) center center no-repeat;
+	width: 20px;
+	height: 24px;
+	cursor: pointer;
+}
+
+.anq1 {
+	text-align: right;
+	padding: 10px 10px;
+}
+
+.anq1 a {
+	color: #f4f4f4;
+	font-size: 14px;
+	margin-left: 20px;
+}
+
+.qy2 {
+	width: 100%;
+	height: 634px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns23_03.jpg) center no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.qy2 .qyn {
+	width: 480px;
+	height: 520px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/bbj.png);
+	position: absolute;
+	right: 45px;
+	top: 40px;
+	padding: 10px;
+}
+
+.qy2 .h1_bt3 {
+	color: #ffffff;
+	padding: 10px 0px 10px 20px;
+}
+
+.fork {
+	padding: 30px 20px;
+	color: #fafafa;
+	font-size: 14px;
+}
+
+.fork .sel1 {
+	margin-right: 10px;
+}
+
+.fork td {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.fork2 {
+	padding: 30px 10px;
+	font-size: 14px;
+}
+
+.fork2 .sel1 {
+	margin-right: 10px;
+}
+
+.fork2 td {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.fork2 .an4 {
+	margin-right: 20px;
+}
+
+.tx3 {
+	height: 25px;
+	line-height: 25px;
+	width: 205px;
+	padding-left: 5px;
+}
+
+.tx3_2 {
+	height: 135px;
+	line-height: 20px;
+	width: 330px;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
+.tx4 {
+	height: 35px;
+	line-height: 35px;
+	width: 380px;
+	padding-left: 5px;
+	border: solid 1px #989898;
+}
+
+.tx4_2 {
+	height: 220px;
+	line-height: 20px;
+	width: 530px;
+	padding-left: 5px;
+	padding-top: 5px;
+	border: solid 1px #989898;
+}
+
+.an4 {
+	width: 100px;
+	height: 40px;
+	line-height: 100%;
+	font-size: 14px;
+	background: #291814;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.sel1 {
+	height: 24px;
+	line-height: 24px;
+	width: 140px;
+}
+
+.jg3 {
+	height: 40px;
+}
+
+.an3 {
+	width: 190px;
+	height: 35px;
+	line-height: 100%;
+	font-size: 14px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns23_06.jpg);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.container2 {
+	width: 460px;
+	margin-left: 30px;
+	height: 380px;
+}
+
+.container2 .n7 {
+	padding: 0px;
+}
+
+.container2 .div_scroll {
+	width: 100%;
+	height: 380px;
+	overflow: auto;
+	float: left;
+}
+
+.container2 .scroll_container {
+	overflow: hidden;
+	position: relative;
+}
+
+.container2 .scroll_absolute {
+	position: absolute;
+}
+
+.container2 .scroll_vertical_bar {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 5px;
+	height: 100%;
+	background: green;
+	margin: 0;
+	padding: 0;
+}
+
+.container2 .scroll_track {
+	position: relative;
+	background-color: #505050;
+}
+
+.container2 .scroll_drag {
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	background-color: #8f8f8f;
+}
+
+.container2 .scroll_arrow {
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+	background-color: #369DB4;
+}
+
+.container2 .scroll_vertical_bar .scroll_arrow {
+	height: 16px;
+}
+
+.lb8 {
+	padding: 50px 0px 0px 0px;
+}
+
+.lb8 li {
+	padding-bottom: 45px;
+}
+
+.lb8 .imgk {
+	width: 209px;
+	float: left;
+}
+
+.lb8 .imgk img {
+	width: 209px;
+}
+
+.lb8 .txtk {
+	width: 500px;
+	float: right;
+	margin-top: 15px;
+}
+
+.lb8 .txtk a.dbt {
+	font-size: 24px;
+	font-family: 'qingke';
+}
+
+.lb8 .txtk p {
+	padding: 30px 0px 0px 0px;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.lb8 .txtk p.p_1 {
+	text-align: right;
+}
+
+.lb9 {
+	width: 960px;
+	overflow: hidden;
+	padding: 30px 0px 10px 0px;
+}
+
+.lb9 ul {
+	width: 1000px;
+}
+
+.lb9 li {
+	width: 292px;
+	height: 405px;
+	float: left;
+	margin: 0px 40px 40px 0px;
+	background: #ffffff;
+}
+
+.lb9 li .imgk {
+	height: 180px;
+}
+
+.lb9 li .imgk img {
+	width: 292px;
+	height: 180px;
+}
+
+.lb9 li .txtk {
+	padding: 15px 12px;
+	position: relative;
+	height: 194px;
+	/*polkey*/
+}
+
+.lb9 .txtk a.dbt {
+	font-size: 18px;
+	font-family: 'qingke';
+	display: block;
+}
+
+.lb9 .txtk p {
+	padding: 10px 0px 20px 0px;
+	color: #707070;
+	line-height: 20px;
+}
+
+.lb9 .anq2 {
+	height: 34px;
+	bottom: 10px;
+	position: absolute;
+	width: 268px;
+	/*polkey*/
+}
+
+.lb9 .anq2 a.m1 {
+	float: left;
+}
+
+.lb9 .anq2 a.cd_4,
+.lb9 .anq2 a.cd_5 {
+	float: right;
+	margin-left: 5px;
+}
+
+a.cd_4 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns25_11.png);
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	display: inline-block;
+}
+
+a.cd_5 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns25_13.png);
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	display: inline-block;
+}
+
+.lb10 {
+	width: 960px;
+	margin: 0px auto;
+	overflow: hidden;
+	padding: 40px 0px 60px 0px;
+}
+
+.lb10 ul {
+	width: 1000px;
+}
+
+.lb10 li {
+	width: 292px;
+	height: 180px;
+	float: left;
+	position: relative;
+	margin-right: 40px;
+	background: #000000;
+}
+
+.lb10 li img {
+	width: 292px;
+	height: 180px;
+}
+
+.lb10 li:hover img {
+	filter: alpha(opacity=85);
+	-moz-opacity: 0.85;
+	opacity: 0.85;
+}
+
+.lb10 li .txtk {
+	position: absolute;
+	width: 292px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns25_25.png);
+	height: 50px;
+	bottom: 0px;
+	left: 0px;
+}
+
+.lb10 li .txtk p {
+	font-size: 18px;
+	font-family: 'qingke';
+	color: #ffffff;
+	line-height: 50px;
+	float: left;
+	margin-left: 15px;
+}
+
+.lb10 li .txtk .tb8 {
+	float: right;
+	margin-right: 15px;
+	margin-top: 8px;
+}
+
+.tb8 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns25_32.png);
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	display: inline-block;
+}
+
+.yj {
+	padding: 30px 0px 10px 0px;
+}
+
+.yj_1 {
+	width: 785px;
+	float: left;
+}
+
+.yj_2 {
+	width: 154px;
+	float: right;
+}
+
+.lb9_2 {
+	width: 785px;
+	overflow: hidden;
+	padding: 30px 0px 10px 0px;
+}
+
+.lb9_2 ul {
+	width: 1000px;
+}
+
+.lb9_2 li {
+	width: 253px;
+	height: 405px;
+	float: left;
+	margin: 0px 10px 40px 0px;
+	background: #eeeeee;
+}
+
+.lb9_2 li .imgk {
+	height: 156px;
+}
+
+.lb9_2 li .imgk img {
+	width: 253px;
+	height: 156px;
+}
+
+.lb9_2 li .txtk {
+	padding: 15px 12px;
+}
+
+.lb9_2 .txtk a.dbt {
+	font-size: 18px;
+	font-family: 'qingke';
+	display: block;
+}
+
+.lb9_2 .txtk p {
+	padding: 10px 0px 20px 0px;
+	color: #707070;
+	line-height: 20px;
+}
+
+.lb9_2 .anq2 {
+	height: 34px;
+}
+
+.lb9_2 .anq2 a.m1 {
+	float: left;
+}
+
+.lb9_2 .anq2 a.cd_4,
+.lb9_2 .anq2 a.cd_5 {
+	float: right;
+	margin-left: 5px;
+}
+
+.h1_bt6 {
+	display: block;
+	text-align: center;
+	font-weight: normal;
+	height: 42px;
+	line-height: 42px;
+	font-size: 22px;
+	font-family: 'qingke';
+	border-top: solid 2px #c0bfbf;
+	border-bottom: solid 1px #c0bfbf;
+}
+
+.p3 {
+	border-bottom: solid 1px #c0bfbf;
+	float: left;
+}
+
+.p3 li {
+	padding: 10px 0px;
+	width: 154px;
+	float: left;
+	border-bottom: solid 1px #c0bfbf;
+}
+
+.p3 img {
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+
+.p3 p {
+	width: 105px;
+	float: right;
+	line-height: 20px;
+	font-size: 14px;
+}
+
+.anq3 {
+	padding: 40px 0px 0px 0px;
+}
+
+.anq3 img {
+	margin-bottom: 4px;
+}
+
+.p4 {}
+
+.p4 li {
+	text-align: center;
+	width: 174px;
+	padding-bottom: 15px;
+}
+
+.p4 li img {
+	width: 174px;
+	display: block;
+}
+
+.p4 li p {
+	font-size: 16px;
+	font-family: 'qingke';
+	padding-top: 8px;
+}
+
+.zt_r {
+	color: #ff0000;
+}
+
+.fok3 {
+	padding: 30px 0px 0px 20px;
+	font-size: 14px;
+}
+
+.fok3 li {
+	padding-bottom: 30px;
+}
+
+.fok3 h1 {
+	display: block;
+	font-weight: normal;
+	font-size: 14px;
+	padding-bottom: 12px;
+}
+
+.fok3 p {
+	padding-left: 15px;
+}
+
+.fok3 p input {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
+.fok3 li.l1 {
+	padding-top: 5px;
+}
+
+
+/*轮显filter:alpha(opacity=90);*/
+
+#scroll_box {
+	width: 100%;
+	position: relative;
+	z-index: 0;
+	height: 710px;
+}
+
+.anq4 {
+	height: 53px;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 15px;
+}
+
+a.m4 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_05.png);
+	width: 53px;
+	height: 53px;
+	line-height: 53px;
+	display: inline-block;
+}
+
+.box_163css {
+	width: 100%;
+	position: relative;
+	height: 100%;
+	position: fixed;
+}
+
+.box_163css img {
+	display: block;
+}
+
+.box_163css li {
+	float: left;
+	display: inline;
+	width: 100%;
+	height: 710px;
+	background:center center no-repeat; background-size:100% 100%;
+}
+
+.scroll_nav {
+	position: absolute;
+	z-index: 2;
+	bottom: 50px;
+	right: 2%;
+	margin-left: -40px;
+}
+
+.scroll_nav li {
+	width: 15px;
+	height: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	/*float:left;*/
+	background: #b8b8b8;
+	margin: 5px 2px;
+	cursor: pointer;
+	opacity: 0.5;
+	filter: "alpha(opacity=50)";
+	-ms-filter: "alpha(opacity=50)";
+}
+
+.scroll_nav li.current {
+	background: #ffffff;
+	opacity: 0.5;
+	filter: "alpha(opacity=50)";
+	-ms-filter: "alpha(opacity=50)";
+}
+
+.sy1 {
+	width: 100%;
+	padding: 60px 0px;
+	background-color: white;
+}
+
+
+/*.sy1 {
+	width: 100%;
+	padding: 60px 0px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns31_02.jpg) #e9e9e9 left no-repeat;
+}*/
+
+.sy2 {
+	width: 100%;
+	padding: 60px 0px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns31_02.jpg) #e9e9e9 right no-repeat;
+}
+
+.bt6 {
+	text-align: center;
+	font-size: 24px;
+	font-family: 'qingke';
+	font-weight: bold;
+}
+
+.sy3 {
+	width: 100%;
+	padding: 30px 0px;
+	background: #dbc9bb;
+}
+
+.sy3_1 {
+	width: 770px;
+	float: left;
+	border-right: solid 1px #e2d4c9;
+}
+
+.sy3_2 {}
+
+.sy3_1 h1 {
+	display: block;
+	color: #ffffff;
+	font-size: 16px;
+	padding-bottom: 20px;
+}
+
+.lb11 {}
+
+.lb11 li {
+	float: left;
+	/*margin-right:65px;*/
+	margin-right: 105px;
+}
+
+.lb11 li b {
+	display: block;
+	padding-left: 12px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_120.png) left no-repeat;
+	color: #ffffff;
+	font-size: 14px;
+	font-family: 微软雅黑;
+}
+
+.lb11 li p {
+	color: #666;
+	padding-top: 5px;
+	line-height: 20px;
+	padding-left: 12px;
+}
+
+.lb11 li p a {
+	color: #666;
+	font-family: 微软雅黑;
+}
+
+.lb11 li p a:hover {
+	color: #ff0000;
+}
+
+.lb12 {
+	float: right;
+	margin-top: 55px;
+}
+
+.lb12 li {
+	float: left;
+	width: 85px;
+	height: 130px;
+	margin-left: 20px;
+	text-align: center;
+	font-family: Arial, 宋体;
+}
+
+.lb12 img {
+	width: 85px;
+	height: 85px;
+	display: block;
+}
+
+.lb12 p {
+	padding-top: 8px;
+}
+
+.sy4 {
+	width: 100%;
+	padding: 30px 0px;
+	background: #000000;
+}
+
+.sy4 .foot {
+	border: 0px;
+	padding: 0px;
+}
+
+.sy4 .foot span.fx {
+	margin-top: 12px;
+}
+
+.sy4 .foot span.fx img {
+	margin-left: 3px;
+	filter: alpha(opacity=80);
+	-moz-opacity: 0.80;
+	opacity: 0.80;
+}
+
+.lb13 {
+	width: 100%;
+}
+
+.lb13 li {
+	width: 100%;
+	position: relative;
+	background: #000000;
+}
+
+.lb13 li:hover img.dtt {
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.60;
+	opacity: 0.60;
+}
+
+.lb13 img.dtt {
+	width: 100%;
+	display: block;
+}
+
+.lb13 .bt {
+	position: absolute;
+	text-align: center;
+	left: 0px;
+	top: 24%;
+	text-align: center;
+	width: 100%;
+}
+
+.lb13 .bt .tb11 {
+	margin-top: 40px;
+}
+
+.tb11 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_27.png);
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	display: inline-block;
+}
+
+.lb14 {
+	width: 100%;
+	overflow: hidden;
+}
+
+.lb14 ul {
+	width: 100%;
+}
+
+.lb14 li {
+	width: 25%;
+	float: left;
+	position: relative;
+	height: 654px;
+	z-index: 0;
+}
+
+.lb14 li img.dtt {
+	width: 100%;
+	height: 654px;
+	border-left: solid 1px #f4f4f4;
+}
+
+.lb14 img.dtt {
+	width: 100%;
+	display: block;
+}
+
+.lb14 .bt {
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	z-index: 1;
+	top: 255px;
+	display: block;
+}
+
+.lb14 .bt img {
+	margin-bottom: 150px;
+}
+
+.lb14 .bt22 {
+	width: 100%;
+	position: absolute;
+	display: none;
+	text-align: center;
+	z-index: 1;
+	top: 0px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_94.png);
+	height: 654px;
+}
+
+.lb14 .bt22 h1 {
+	display: block;
+	color: #ffffff;
+	font-size: 24px;
+	padding-top: 100px;
+	padding-bottom: 70px;
+}
+
+.lb14 .bt22 p {
+	width: 260px;
+	height: 349px;
+	margin: 0px auto;
+	text-align: left;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.lb15 {
+	width: 100%;
+	height: 659px;
+	overflow: hidden;
+}
+
+.lb15 ul {
+	width: 100%;
+	height: 659px;
+}
+
+.lb15 ul li {
+	width: 145px;
+	height: 659px;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns31_12.jpg) no-repeat;
+}
+
+.lb15 ul li.b1 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/gdt1.jpg) no-repeat;
+}
+
+.lb15 ul li.b2 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/gdt2.jpg) no-repeat;
+}
+
+.lb15 ul li.b3 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns31_12.jpg) no-repeat;
+}
+
+.lb15 ul li.b4 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/gdt3.jpg) no-repeat;
+}
+
+.lb15 ul li.b5 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/gdt4.jpg) no-repeat;
+}
+
+.lb15 .active {
+	width: 815px;
+}
+
+.lb15 ul span {
+	width: 145px;
+	display: block;
+	height: 659px;
+	padding-top: 10px;
+	border-right: 1px solid #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.sfn {
+	height: 659px;
+	width: 100%;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/hdj.png);
+	color: #ffffff;
+	font-size: 14px;
+	text-align: center;
+	display: none;
+}
+
+.sfn h1 {
+	display: block;
+	font-size: 24px;
+	padding: 125px 0px 68px 0px;
+	width: 490px;
+	margin: 0px auto;
+}
+
+.sfn p {
+	width: 500px;
+	height: 250px;
+	margin: 0px auto;
+	text-align: left;
+	font-size: 16px;
+}
+
+.bg0 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_50.png) center center no-repeat;
+}
+
+.bg1 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/sxt1.png) center center no-repeat;
+}
+
+.bg2 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/sxt2.png) center center no-repeat;
+}
+
+.bg3 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/sxt3.png) center center no-repeat;
+}
+
+.bg4 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/sxt4.png) center center no-repeat;
+}
+
+a.m5 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns30_27.png);
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	display: inline-block;
+}
+
+.ls {
+	padding: 30px 0px;
+}
+
+.ls_1 {
+	width: 150px;
+	float: left;
+	margin-left: 10px;
+}
+
+.ls_2 {
+	width: 610px;
+	float: right;
+}
+
+.lb16 {
+	width: 610px;
+}
+
+.lb16 li {
+	padding-bottom: 50px;
+	border-bottom: dotted 1px #898989;
+	margin-bottom: 50px;
+	float: left;
+	width: 610px;
+}
+
+.lb16 .imgk {
+	width: 240px;
+	float: left;
+}
+
+.lb16 .imgk img {
+	width: 240px;
+	display: block;
+}
+
+.lb16 .txtk {
+	width: 345px;
+	float: right;
+}
+
+.lb16 .txtk b {
+	display: block;
+	font-size: 16px;
+}
+
+.lb16 .txtk p {
+	color: #707070;
+	padding-top: 10px;
+	font-size: 14px;
+}
+
+.lm6 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ls_05.png) left;
+}
+
+.lm6 li {
+	line-height: 20px;
+}
+
+.lm6 li a {
+	display: block;
+	height: 20px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ls_08.jpg) left center no-repeat;
+	font-size: 14px;
+	padding-left: 35px;
+	margin-bottom: 15px;
+}
+
+.lm6 li a.on {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ls_03.jpg) left center no-repeat;
+	font-size: 16px;
+	margin-bottom: 55px;
+}
+
+.jz {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/jybj.jpg);
+	width: 1007px;
+	height: 712px;
+	margin-left: -23px;
+	position: relative;
+}
+
+.jz a.a1 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/jy3_14.png);
+	width: 36px;
+	height: 83px;
+	line-height: 83px;
+	position: absolute;
+	left: 40px;
+	top: 305px;
+}
+
+.jz a.a2 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/jy3_17.png);
+	width: 35px;
+	height: 83px;
+	line-height: 83px;
+	position: absolute;
+	right: 40px;
+	top: 305px;
+}
+
+.jz .jzn {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/jy3_03.png);
+	width: 815px;
+	height: 590px;
+	position: absolute;
+	top: 60px;
+	left: 95px;
+}
+
+.jz .jbt1 {
+	width: 400px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 26px;
+	font-family: 'qingke';
+	top: 15px;
+	left: 210px;
+	position: absolute;
+}
+
+.jz .jbt2 {
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 16px;
+	top: 25px;
+	right: 0px;
+	font-family: 微软雅黑;
+	position: absolute;
+}
+
+#holder {
+	/* The unordered list that is to be split into pages */
+	width: 800px;
+	overflow: hidden;
+	height: 516px;
+	position: relative;
+	margin: 65px 0px 0px 8px;
+}
+
+.swControls {
+	position: absolute;
+}
+
+a.swShowPage {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/jy3_22.png);
+	float: left;
+	height: 17px;
+	margin: 4px 3px;
+	text-indent: -9999px;
+	width: 17px;
+	/*border:1px solid #ccc;*/
+	/* CSS3 rounded corners */
+	-moz-border-radius: 17px;
+	-webkit-border-radius: 17px;
+	border-radius: 17px;
+}
+
+a.swShowPage.active {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/jy3_24.png);
+}
+
+#holder li {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/jy3_09.jpg);
+	width: 86px;
+	height: 115px;
+	margin: 7px;
+	text-align: center;
+	float: left;
+}
+
+#holder li .bt {
+	display: none;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/jy3_07.jpg);
+	width: 86px;
+	height: 115px;
+}
+
+#holder li:hover .bt {
+	display: block;
+}
+
+#holder li .bt p {
+	color: #e8d59a;
+	font-size: 14px;
+	font-family: 微软雅黑;
+	line-height: 20px;
+	padding-top: 7px;
+}
+
+#holder li .bt p.p_1 {
+	padding-top: 15px;
+}
+
+.jz2 {
+	width: 790px;
+	padding: 30px 0px 0px 0px;
+}
+
+.jz2 .imgk {
+	width: 295px;
+	float: left;
+}
+
+.jz2 .imgk img {
+	width: 295px;
+	display: block;
+	margin-bottom: 12px;
+}
+
+.jz2 .txtk {
+	width: 450px;
+	float: right;
+}
+
+a.cd_fd {
+	display: inline-block;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/jy32_07.png) left no-repeat;
+	height: 24px;
+	line-height: 24px;
+	padding-left: 25px;
+}
+
+.jsbt1 {
+	font-family: 'qingke';
+	font-size: 18px;
+	padding-top: 15px;
+}
+
+.jsnr1 {
+	font-size: 14px;
+	color: #707070;
+	padding-top: 15px;
+	line-height: 22px;
+}
+
+.jsbt2 {
+	font-size: 18px;
+	padding-top: 15px;
+	color: #707070;
+	line-height: 30px;
+}
+
+.jsbt2 span {
+	font-family: 'qingke';
+	display: inline-block;
+	width: 85px;
+	color: #010101;
+}
+
+.dl_bj {
+	width: 100%;
+	background: url(../img/login_b.jpg) bottom center no-repeat;
+	padding: 0px 0px 50px 0px;
+}
+
+.dl_n {
+	background-color: #fff;
+	filter:alpha(opacity=85);
+    -moz-opacity:0.85;
+    -khtml-opacity: 0.85;
+    opacity: 0.85;
+	width: 885px;
+	margin: 0px auto;
+	padding: 40px 40px 60px 40px;
+}
+
+.fo_lb1 {
+	width: 885px;
+	float: left;
+	font-size: 14px;
+	line-height: 35px;
+	border-bottom: solid 1px #dbdbdb;
+	margin-bottom: 25px;
+	padding-bottom: 30px;
+}
+
+.fo_lb1 li {
+	width: 885px;
+	float: left;
+	margin-bottom: 16px;
+}
+
+.fo_lb1 .d1 {
+	width: 225px;
+	float: left;
+	text-align: right;
+}
+
+.fo_lb1 .d2 {
+	width: 640px;
+	float: right;
+}
+
+.fo_lb1 input {
+	float: left;
+}
+
+.fo_lb1 .s_yz {
+	float: left;
+	margin-left: 20px;
+}
+
+.fo_lb1 .s_yzz {
+	float: left;
+	margin-left: 15px;
+	color: #666;
+}
+
+.fo_lb1 .an4 {
+	width: 125px;
+}
+
+.fo_lb1 li.l1 {
+	margin-top: 15px;
+}
+
+.fo_lb1 li.l1 a {
+	float: left;
+	margin-left: 30px;
+}
+
+.fo_lb1 li.l1 a.cd_r {
+	margin-left: 10px;
+}
+
+.fo_lb1 li.l2 {
+	line-height: 22px;
+}
+
+.fo_lb1 li.l2 span.s1 {
+	float: left;
+	margin-right: 10px;
+	margin-top: 5px;
+	line-height: normal;
+}
+
+a.cd_r {
+	color: #c41010;
+}
+
+a.cd_r:hover {
+	color: #ff0000;
+}
+
+.dl_n2 {
+	width: 640px;
+	float: left;
+	margin-left: 245px;
+	color: #666;
+}
+
+.dl_n2 p {
+	padding-bottom: 10px;
+}
+
+.dl_n2 a {
+	margin-right: 15px;
+}
+
+.ny_5 {
+	width: 740px;
+	float: right;
+	margin-top: -15px;
+}
+
+.nr_u {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/nsx2_05.jpg) bottom no-repeat;
+	min-height: 450px;
+	padding-top: 80px;
+	text-align: center;
+}
+
+.nr_u p.p_1 {
+	line-height: normal;
+	font-size: 30px;
+	padding-bottom: 20px;
+}
+
+.nr_u p.p_1 .zt_r2 {
+	margin-right: 15px;
+}
+
+.zt_r2 {
+	color: #dc202c;
+}
+
+.nr_u p.p_2 {
+	line-height: normal;
+	font-size: 18px;
+	padding-top: 50px;
+}
+
+.fo_lb2 {
+	width: 740px;
+	float: left;
+	font-size: 14px;
+	line-height: 35px;
+	border-bottom: solid 1px #dbdbdb;
+	margin-bottom: 25px;
+	padding-bottom: 30px;
+}
+
+.fo_lb2 li {
+	width: 740px;
+	float: left;
+	margin-bottom: 16px;
+}
+
+.fo_lb2 .d1 {
+	width: 160px;
+	float: left;
+	text-align: right;
+}
+
+.fo_lb2 .d2 {
+	width: 560px;
+	float: right;
+}
+
+.fo_lb2 input {
+	float: left;
+}
+
+.fo_lb2 .s_yz {
+	float: left;
+	margin-left: 20px;
+}
+
+.fo_lb2 .s_yzz {
+	float: left;
+	margin-left: 15px;
+	color: #666;
+}
+
+.fo_lb2 .an4 {
+	width: 125px;
+}
+
+.fo_lb2 li.l1 {
+	margin-top: 20px;
+}
+
+.fo_lb2 li.l2 span.s1 {
+	float: left;
+	margin-left: 12px;
+}
+
+.fo_lb2 li.l2 input {
+	float: left;
+	margin-top: 12px;
+}
+
+.fo_lb2 li.l2 span.s3 {
+	float: left;
+	margin-left: 100px;
+}
+
+.nr_u2 {
+	padding-top: 50px;
+}
+
+.lb_mp {
+	width: 740px;
+	padding-top: 20px;
+}
+
+.lb_mp li {
+	width: 740px;
+	float: left;
+	margin-bottom: 2px;
+}
+
+.lb_mp h1 {
+	width: 740px;
+	cursor: pointer;
+	float: left;
+	height: 45px;
+	font-weight: normal;
+	line-height: 45px;
+	color: #ffffff;
+	font-size: 16px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/nsx3_03.png) #9f9f9f right no-repeat;
+}
+
+.lb_mp h1.on {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/nsx3_05.png) #9f9f9f right no-repeat;
+}
+
+.lb_mp h1 span.s1 {
+	float: left;
+	margin-left: 25px;
+	width: 245px;
+}
+
+.lb_mp h1 span.s2 {
+	float: left;
+	width: 120px;
+}
+
+.lb_mp .mpn {
+	float: left;
+	width: 740px;
+	display: none;
+}
+
+.lb_mp .mp_bt {
+	width: 740px;
+	height: 42px;
+	line-height: 40px;
+	background: #e6e6e6;
+	float: left;
+}
+
+.lb_mp .mp_bt span {
+	float: left;
+	border: solid 1px #d7d7d7;
+	margin-right: -1px;
+	text-align: center;
+}
+
+.lb_mp .mp_bt span.s1 {
+	width: 100px;
+}
+
+.lb_mp .mp_bt span.s2 {
+	width: 190px;
+}
+
+.lb_mp .mp_bt span.s3 {
+	width: 100px;
+}
+
+.lb_mp .mp_bt span.s4 {
+	width: 80px;
+}
+
+.lb_mp .mp_bt span.s5 {
+	width: 90px;
+}
+
+.lb_mp .mp_bt span.s6 {
+	width: 173px;
+}
+
+.lb_mp .mpn dd {
+	width: 740px;
+	height: 30px;
+	line-height: 30px;
+	padding: 12px 0px;
+	border-bottom: solid 1px #d6d6d6;
+	float: left;
+}
+
+.lb_mp .mpn dd span {
+	float: left;
+	text-align: center;
+}
+
+.lb_mp .mpn dd span.s1 {
+	width: 100px;
+}
+
+.lb_mp .mpn dd span.s2 {
+	width: 190px;
+}
+
+.lb_mp .mpn dd span.s3 {
+	width: 100px;
+}
+
+.lb_mp .mpn dd span.s4 {
+	width: 80px;
+}
+
+.lb_mp .mpn dd span.s5 {
+	width: 90px;
+}
+
+.lb_mp .mpn dd span.s6 {
+	width: 173px;
+	position: relative;
+}
+
+.lb_mp .mpn dd span.s6 a.cd_an1 {
+	margin-left: 20px;
+}
+
+.lb_mp .mpn dd a.cd_wei {
+	color: #010101;
+	position: relative;
+	width: 60px;
+	height: 30px;
+}
+
+a.cd_an1 {
+	display: inline-block;
+	border: solid 1px #dddddd;
+	background: #ffffff;
+	color: #dc202c;
+	padding: 0px 10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.lb_mp .mpn dd .wei_ts {
+	border: solid 1px #dddddd;
+	display: none;
+	background: #ffffff;
+	left: -80px;
+	position: absolute;
+	top: 35px;
+	width: 190px;
+	color: #666;
+	line-height: 20px;
+	text-align: left;
+	padding: 15px;
+}
+
+.lb_mp .mpn dd .wei_ts i {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/nsx3_08.png);
+	width: 23px;
+	height: 11px;
+	position: absolute;
+	left: 90px;
+	top: -11px;
+}
+
+.f_d_k {
+	background: #000000;
+	filter: alpha(opacity=35);
+	-moz-opacity: 0.35;
+	opacity: 0.35;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 99991;
+	top: 0px;
+	left: 0px;
+}
+
+.f_d_nr {
+	position: fixed;
+	top: 80px;
+	left: 0px;
+	z-index: 99992;
+	width: 100%;
+}
+
+.f_d_zw {
+	width: 535px;
+	height: 444px;
+	position: relative;
+	margin: 0px auto;
+	z-index: 99993;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/nsx4_07.jpg);
+}
+
+span.f_d_gb {
+	width: 47px;
+	height: 47px;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/nsx4_03.png)
+}
+
+span.f_d_gb a {
+	display: block;
+	height: 47px;
+	line-height: 47px;
+	text-decoration: none;
+}
+
+.f_d_nj {
+	padding-top: 80px;
+}
+
+.fo_lb3 {
+	width: 535px;
+	float: left;
+	font-size: 14px;
+	line-height: 35px;
+}
+
+.fo_lb3 li {
+	width: 535px;
+	float: left;
+	margin-bottom: 16px;
+}
+
+.fo_lb3 .tx4 {
+	width: 330px;
+}
+
+.fo_lb3 .d1 {
+	width: 120px;
+	float: left;
+	text-align: right;
+}
+
+.fo_lb3 .d2 {
+	width: 405px;
+	float: right;
+}
+
+.fo_lb3 input {
+	float: left;
+}
+
+.fo_lb3 .an4 {
+	width: 125px;
+}
+
+.fo_lb3 li.l1 {
+	margin-top: 20px;
+}
+
+.ydk {
+	width: 965px;
+	margin: 0px auto;
+	height: 500px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.ydk p.p_1 {
+	font-size: 60px;
+	line-height: normal;
+	font-family: 'qingke';
+	padding: 180px 0px 30px 0px;
+}
+
+.ydk a {
+	text-decoration: underline;
+	margin-left: 15px;
+}
+
+.zx {
+	background: #ffffff;
+	padding: 25px 30px 30px 30px;
+}
+
+.zx1 {
+	padding-bottom: 40px;
+}
+
+.zx1 .imgk {
+	width: 420px;
+	float: left;
+}
+
+.zx1 .imgk img {
+	width: 420px;
+}
+
+.zx1 .txtk {
+	width: 420px;
+	float: right;
+	margin-top: 50px;
+	color: #3b3b3b;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.zx1 .txtk b {
+	display: block;
+	font-family: 'qingke';
+	font-size: 20px;
+	line-height: normal;
+	font-weight: normal;
+	padding-bottom: 8px;
+	color: #010101;
+}
+
+.xbt1 {
+	font-size: 16px;
+	padding: 15px 0px 12px 0px;
+}
+
+.lb_sj {
+	width: 900px;
+	padding-bottom: 10px;
+}
+
+.lb_sj ul {
+	width: 920px;
+}
+
+.lb_sj li {
+	width: 117px;
+	float: left;
+	margin: 0px 10px 10px 0px;
+	height: 30px;
+	line-height: 30px;
+	border: solid 1px #dddddd;
+	background: #ffffff;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.lb_sj li a {
+	display: block;
+	text-align: center;
+}
+
+.lb_sj li a.on {
+	color: #f02222;
+}
+
+.tab1 {
+	background: #dddddd;
+	text-align: center;
+}
+
+.tab1 td {
+	background: #ffffff;
+}
+
+.tab1 tr.tr1 td {
+	background: #9f9f9f;
+	color: #ffffff;
+}
+
+.tab1 td.td1 {
+	font-family: Arial;
+	color: #010101;
+	font-weight: bold;
+}
+
+.sl {
+	width: 100px;
+	height: 22px;
+	margin: 0px auto;
+	line-height: 22px;
+	background: #ffffff;
+	border: solid 1px #e5e5e5;
+}
+
+.sl a.sl1 {
+	float: left;
+	height: 22px;
+	width: 25px;
+	text-align: center;
+	font-family: 宋体;
+}
+
+.sl a.sl2 {
+	float: right;
+	height: 22px;
+	width: 25px;
+	text-align: center;
+	font-family: 宋体;
+}
+
+.sl .sl3 {
+	height: 22px;
+	line-height: 22px;
+	float: left;
+	border-left: solid 1px #e5e5e5;
+	border-right: solid 1px #e5e5e5;
+	width: 48px;
+	background: #f8f8f8;
+	text-align: center;
+	font-size: 12px;
+}
+
+.anq5 {
+	text-align: right;
+	padding-top: 25px;
+}
+
+a.cd_an2 {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	width: 135px;
+	text-align: center;
+	border: solid 1px #dddddd;
+	background: #ffffff;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.fw_bt {
+	padding: 40px 0px;
+}
+
+.zx2 {}
+
+.zx2 .imgk {
+	width: 500px;
+	float: left;
+	height: 335px;
+	overflow: hidden;
+}
+
+.zx2 .txtk {
+	width: 430px;
+	float: right;
+	color: #3b3b3b;
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.zx2 .txtk b {
+	display: block;
+	font-family: 'qingke';
+	font-size: 20px;
+	line-height: normal;
+	font-weight: normal;
+	padding-bottom: 8px;
+	color: #010101;
+}
+
+.anq6 {
+	text-align: right;
+	padding-top: 20px;
+}
+
+.zx3 {
+	height: 340px;
+	background: #ffffff;
+}
+
+.zx3 .imgk {
+	width: 470px;
+	float: left;
+	height: 340px;
+	overflow: hidden;
+}
+
+.zx3 .imgk img {
+	width: 470px;
+	height: 340px;
+}
+
+.zx3 .txtk {
+	width: 420px;
+	float: right;
+	margin: 35px 30px 0px 0px;
+	color: #666;
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.zx3 .txtk b {
+	display: block;
+	font-family: 'qingke';
+	font-size: 20px;
+	line-height: normal;
+	font-weight: normal;
+	padding-bottom: 20px;
+	color: #010101;
+}
+
+.zx3 .txtk p {
+	padding-bottom: 15px;
+}
+
+.zx3 .txtk2 {
+	width: 420px;
+	float: right;
+	margin: 35px 30px 0px 0px;
+	color: #666;
+	font-size: 14px;
+	line-height: 35px;
+}
+
+.zx3 .txtk2 b {
+	display: block;
+	font-family: 'qingke';
+	font-size: 20px;
+	line-height: normal;
+	font-weight: normal;
+	padding-bottom: 15px;
+	color: #010101;
+}
+
+#scroll_box2 {
+	width: 500px;
+	position: relative;
+	z-index: 0;
+	height: 335px;
+}
+
+#scroll_box2 .box_163css {
+	width: 500px;
+	height: 335px;
+	position: relative;
+}
+
+#scroll_box2 .box_163css img {
+	display: block;
+	width: 500px;
+	height: 335px;
+}
+
+#scroll_box2 .box_163css p {
+	position: absolute;
+	padding-left: 10px;
+	bottom: 0px;
+	left: 10px;
+	color: #ffffff;
+	bottom: 0px;
+	left: 0px;
+	width: 490px;
+	z-index: 2;
+	height: 35px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/nsx6_07.png);
+	line-height: 35px;
+}
+
+#scroll_box2 .box_163css li {
+	float: left;
+	display: inline;
+	width: 100%;
+	height: 710px;
+}
+
+#scroll_box2 .scroll_nav {
+	position: absolute;
+	z-index: 3;
+	bottom: 6px;
+	right: 10px;
+}
+
+#scroll_box2 .scroll_nav li {
+	width: 22px;
+	height: 22px;
+	text-align: center;
+	color: #ffffff;
+	-moz-border-radius: 22px;
+	-webkit-border-radius: 22px;
+	border-radius: 22px;
+	/*float:left;*/
+	background: none;
+	margin: 0px 2px;
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	opacity: 1;
+}
+
+#scroll_box2 .scroll_nav li.current {
+	background: #ff0000;
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	opacity: 1;
+}
+
+.lb_fw {
+	width: 960px;
+	overflow: hidden;
+	padding-top: 40px;
+}
+
+.lb_fw ul {}
+
+.lb_fw li {
+	width: 240px;
+	height: 182px;
+	position: relative;
+	float: left;
+	margin-bottom: 40px;
+}
+
+.lb_fw li img {
+	width: 240px;
+	height: 182px;
+}
+
+.lb_fw li p {
+	position: absolute;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/nsx6_07.png);
+	height: 38px;
+	line-height: 38px;
+	color: #ffffff;
+	bottom: 0px;
+	left: 0px;
+	padding-left: 10px;
+	width: 230px;
+	overflow: hidden;
+}
+
+.lm7 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns3_03.png);
+	height: 46px;
+	line-height: 46px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.lm7 a {
+	display: inline-block;
+	height: 46px;
+	padding: 0px 40px;
+	font-size: 18px;
+	font-family: 'qingke';
+	margin-right: 1px;
+}
+
+.lm7 a:hover,
+.lm7 a.on {
+	background: #f02222;
+	color: #ffffff;
+}
+
+.jg4 {
+	height: 50px;
+}
+
+.lm2_2 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns3_03.png);
+	height: 46px;
+	line-height: 46px;
+	overflow: hidden;
+}
+
+.lm2_2 li {
+	float: left;
+	height: 46px;
+	margin-right: 1px;
+}
+
+.lm2_2 li a {
+	display: block;
+	height: 46px;
+	padding: 0px 30px;
+	font-size: 18px;
+	font-family: 'qingke';
+}
+
+.lm2_2 li a:hover,
+.lm2_2 li a.on {
+	background: #f02222;
+	color: #ffffff;
+}
+
+.nr6 {
+	padding: 30px 0px;
+	font-size: 14px;
+	color: #3b3b3b;
+	line-height: 28px;
+}
+
+.lb_fw2 {
+	width: 790px;
+}
+
+.lb_fw2 li {
+	width: 790px;
+	float: left;
+	padding: 35px 0px;
+	border-bottom: dotted 1px #b6b6b6;
+}
+
+.lb_fw2 .imgk {
+	float: left;
+	width: 340px;
+	height: 233px;
+	position: relative;
+}
+
+.lb_fw2 .imgk img {
+	width: 340px;
+	height: 233px;
+}
+
+.lb_fw2 .txtk {
+	width: 420px;
+	float: right;
+}
+
+.lb_fw2 span.s1 {
+	float: left;
+	line-height: 40px;
+	font-size: 20px;
+	font-family: 'qingke';
+	width: 310px;
+}
+
+.lb_fw2 span.s2 {
+	float: right;
+	height: 13px;
+	margin-top: 10px;
+}
+
+.lb_fw2 p.p_1 {
+	width: 420px;
+	float: left;
+	line-height: 21px;
+	color: #333333;
+	margin-top: 5px;
+}
+
+.lb_fw2 p.p_2 {
+	width: 420px;
+	float: left;
+	line-height: 21px;
+	color: #333333;
+	margin-top: 20px;
+}
+
+i.i1 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/nsx81_06.png);
+	width: 14px;
+	height: 13px;
+	float: left;
+	margin: 0px 2px;
+}
+
+i.i2 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/nsx81_11.png);
+	width: 73px;
+	height: 73px;
+	position: absolute;
+	top: -2px;
+	left: -2px;
+}
+
+.zx4 {
+	height: 340px;
+	background: #ffffff;
+}
+
+.zx4 .imgk {
+	width: 518px;
+	float: left;
+	height: 340px;
+	overflow: hidden;
+}
+
+.zx4 .imgk img {
+	width: 518px;
+	height: 340px;
+}
+
+.zx4 .txtk {
+	width: 375px;
+	float: right;
+	margin: 30px 30px 0px 0px;
+	color: #666;
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.zx4 .txtk b {
+	display: block;
+	font-family: 'qingke';
+	font-size: 20px;
+	line-height: normal;
+	font-weight: normal;
+	padding-bottom: 15px;
+	color: #010101;
+}
+
+.lb2_2 {
+	width: 960px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+.lb2_2 ul {
+	width: 1000px;
+}
+
+.lb2_2 li {
+	width: 460px;
+	height: 270px;
+	float: left;
+	margin-right: 40px;
+}
+
+.lb2_2 .imgk {
+	width: 260px;
+	float: left;
+}
+
+.lb2_2 .imgk img {
+	width: 260px;
+	height: 195px;
+}
+
+.lb2_2 .txtk {
+	width: 180px;
+	float: right;
+	height: 195px;
+	position: relative;
+}
+
+.lb2_2 .txtk a.cd_an2 {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	height: 28px;
+	line-height: 28px;
+}
+
+.lb2_2 .txtk a.dbt {
+	font-size: 18px;
+	font-family: 'qingke';
+}
+
+.lb2_2 .txtk p {
+	padding: 10px 0px 20px 0px;
+	color: #707070;
+	line-height: 20px;
+	font-size: 12px;
+}
+
+.top1 {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 9999;
+}
+
+.pos {
+	position: relative;
+}
+
+.limask {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background: #000000;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	-moz-transition: opacity 0.6s linear 0s;
+	-ms-transition: opacity 0.6s linear 0s;
+	-o-transition: opacity 0.6s linear 0s;
+	-webkit-transition: opacity 0.6s linear 0s;
+	transition: opacity 0.6s linear 0s;
+}
+
+.lb14 .bt22 {
+	display: block;
+	opacity: 0;
+	-moz-transition: opacity 0.6s linear 0s;
+	-ms-transition: opacity 0.6s linear 0s;
+	-o-transition: opacity 0.6s linear 0s;
+	-webkit-transition: opacity 0.6s linear 0s;
+	transition: opacity 0.6s linear 0s;
+}
+
+.lb14 .bt {
+	opacity: 1;
+	-moz-transition: opacity 0.6s linear 0s;
+	-ms-transition: opacity 0.6s linear 0s;
+	-o-transition: opacity 0.6s linear 0s;
+	-webkit-transition: opacity 0.6s linear 0s;
+	transition: opacity 0.6s linear 0s;
+}
+
+.box_163css .image {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	opacity: 0;
+	display: block;
+	height: 100%;
+}
+
+.scroll_xnav2 {
+	position: absolute;
+	z-index: 2;
+	bottom: 50px;
+	right: 2%;
+	margin-left: -40px;
+	width: 20px;
+}
+
+.scroll_xnav2 li {
+	width: 15px;
+	height: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	/*float:left;*/
+	background: #b8b8b8;
+	margin: 3px 2px;
+	cursor: pointer;
+	opacity: 0.5;
+	filter: "alpha(opacity=50)";
+	-ms-filter: "alpha(opacity=50)";
+}
+
+.scroll_xnav2 li.current {
+	background: #ffffff;
+	opacity: 0.5;
+	filter: "alpha(opacity=50)";
+	-ms-filter: "alpha(opacity=50)";
+}
+
+a.m4 {
+	opacity: 1;
+	-moz-transition: opacity 0.4s linear 0s;
+	-ms-transition: opacity 0.4s linear 0s;
+	-o-transition: opacity 0.4s linear 0s;
+	-webkit-transition: opacity 0.4s linear 0s;
+	transition: opacity 0.4s linear 0s;
+}
+
+a.m4:hover {
+	opacity: 0.4;
+}
+
+.nr7 {
+	font-size: 14px;
+	padding: 30px 0px 40px 0px;
+	line-height: 24px;
+}
+
+.tt3 {
+	padding: 40px 0px;
+}
+
+.tt3 #DB_gallery {
+	float: left;
+}
+
+.tt3 .txtk {
+	width: 410px;
+	float: right;
+	line-height: 38px;
+	margin-top: 20px;
+}
+
+.tt3 .txtkn {
+	line-height: 22px;
+	padding-bottom: 10px;
+}
+
+.tt3 .txtk b {
+	display: block;
+	font-family: 'qingke';
+	font-size: 20px;
+	line-height: normal;
+	font-weight: normal;
+	padding-bottom: 15px;
+	color: #0101010;
+}
+
+#DB_gallery ul,
+#DB_gallery li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#DB_gallery img {
+	border: none;
+	vertical-align: top;
+}
+
+#DB_gallery .DB_imgSet {
+	position: relative;
+	width: 500px;
+	height: 334px;
+	overflow: hidden;
+}
+
+#DB_gallery .DB_imgSet .DB_imgWin {
+	height: 334px;
+	width: 500px;
+}
+
+#DB_gallery .DB_imgSet .DB_imgWin img {
+	height: 334px;
+	width: 500px;
+}
+
+#DB_gallery .DB_imgSet .DB_page {
+	position: absolute;
+	bottom: 0;
+	font: 11px tahoma bold;
+	padding: 5px;
+	color: #ffffff
+}
+
+#DB_gallery .DB_imgSet .DB_page .DB_current {
+	color: #ffff00
+}
+
+#DB_gallery .DB_imgSet .DB_page .DB_total {
+	color: #ffcc00
+}
+
+#DB_gallery .DB_imgSet .DB_prevBtn {
+	position: absolute;
+	top: 50%;
+	margin-top: -45px;
+	cursor: pointer;
+	left: 0;
+}
+
+#DB_gallery .DB_imgSet .DB_nextBtn {
+	position: absolute;
+	top: 50%;
+	margin-top: -45px;
+	cursor: pointer;
+	right: 0;
+}
+
+#DB_gallery .DB_thumSet {
+	position: relative;
+	width: 478px;
+	overflow: hidden;
+	background: #f1f1f1;
+	border: solid 1px #cac9c9;
+	padding: 4px 10px 10px;
+}
+
+#DB_gallery .DB_thumSet .DB_thumMove {
+	position: relative;
+	white-space: nowrap;
+	font-size: 0;
+	height: 55px;
+}
+
+#DB_gallery .DB_thumSet .DB_thumMove li {
+	display: inline;
+	margin-right: 13px;
+	height: 55px;
+}
+
+#DB_gallery .DB_thumSet .DB_thumMove li img {
+	width: 85px;
+	height: 58px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+#DB_gallery .DB_thumSet .DB_prevPageBtn {
+	position: absolute;
+	top: 0;
+	cursor: pointer;
+	left: 0;
+}
+
+#DB_gallery .DB_thumSet .DB_nextPageBtn {
+	position: absolute;
+	top: 0;
+	cursor: pointer;
+	right: 0;
+}
+
+#DB_gallery .DB_thumSet .DB_thumLine {
+	position: absolute;
+	width: 79px;
+	height: 55px;
+	border: 3px solid #ff0000;
+	left: 0;
+	top: 0
+}
+
+.fw2 {
+	background: #ffffff;
+	padding: 40px 40px 50px 40px;
+}
+
+.lc {
+	width: 880px;
+	height: 100px;
+}
+
+.lc ul {
+	width: 880px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/nsx12_05.jpg);
+	height: 20px;
+	float: left;
+	margin-top: 30px;
+}
+
+.lc li {
+	width: 20px;
+	height: 20px;
+	float: left;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/nsx12_07.jpg);
+	margin: 0px 100px;
+	position: relative;
+}
+
+.lc li p {
+	position: absolute;
+	height: 24px;
+	line-height: 24px;
+	width: 180px;
+	left: -79px;
+	top: -35px;
+	text-align: center;
+	font-size: 16px;
+}
+
+.lc li.on {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/nsx12_03.jpg);
+	color: #c20c11;
+}
+
+.fw_sj {
+	padding: 20px 0px 20px 0px;
+}
+
+.tab2 {
+	background: #e1e1e1;
+	text-align: center;
+}
+
+.tab2 td {
+	background: #f0f0f0;
+}
+
+.tab3 {
+	text-align: center;
+}
+
+.tab3 td {
+	background: #ffffff;
+	border-bottom: solid 1px #e1e1e1;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.tab3 .tx4 {
+	width: 160px;
+	height: 24px;
+	line-height: 24px;
+}
+
+.anq7 {
+	text-align: right;
+	padding: 40px 0px 0px 0px;
+}
+
+.anq7 a {
+	margin-left: 20px;
+}
+
+.fw3 {
+	background: #f5f5f5;
+	padding: 30px 25px;
+}
+
+.k1 {
+	line-height: 22px;
+	float: left;
+	width: 830px;
+}
+
+.k1 input {
+	float: left;
+	margin-top: 6px;
+	margin-right: 10px;
+}
+
+.k1bt {
+	width: 730px;
+	height: 55px;
+	line-height: 55px;
+	float: left;
+	margin-left: 100px;
+}
+
+.k1_lb {
+	width: 730px;
+	border-bottom: solid 1px #e1e1e1;
+	float: left;
+	margin-left: 100px;
+}
+
+.k1_lb ul {
+	width: 830px;
+}
+
+.k1_lb li {
+	width: 160px;
+	height: 38px;
+	border: solid 1px #e1e1e1;
+	background: #ffffff;
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+
+.k1_lb li img {
+	height: 38px;
+	max-width: 130px;
+	float: right;
+}
+
+.k1_lb li input {
+	float: left;
+	margin: 12px 0px 0px 10px;
+}
+
+.fs1 {
+	width: 960px;
+}
+
+.fs1_1 {
+	width: 560px;
+	float: left;
+	background: #d3d3d3;
+}
+
+.fs1_1 .tp {
+	width: 387px;
+	height: 290px;
+	overflow: hidden;
+	float: left;
+	position: relative;
+	z-index: 0
+}
+
+.fs1_1 .tp img {
+	width: 387px;
+	height: 290px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1
+}
+
+.fs1_1 .tp .fbt1 {
+	width: 375px;
+	padding-left: 12px;
+	font-size: 18px;
+	color: #ffffff;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	z-index: 2;
+	height: 40px;
+	line-height: 40px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/jy3_03.png);
+}
+
+.fs1_1 .tp .fbt2 {
+	padding: 20px 20px;
+	width: 347px;
+	color: #333333;
+	line-height: 20px;
+	z-index: 3;
+	position: absolute;
+	top: 280px;
+}
+
+.gdt {
+	float: right;
+	margin-right: 7px;
+	width: 159px;
+	position: relative;
+	height: 250px;
+	margin-top: 20px;
+}
+
+.gdt a.t1 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/nsx14_03.png) center center no-repeat;
+	height: 12px;
+	width: 159px;
+	position: absolute;
+	top: -14px;
+}
+
+.gdt a.t2 {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/nsx14_19.png) center center no-repeat;
+	height: 12px;
+	width: 159px;
+	position: absolute;
+	bottom: -14px;
+}
+
+.p5 {
+	width: 159px;
+}
+
+.p5 li img {
+	width: 159px;
+	height: 119px;
+}
+
+.p5 li {
+	float: left;
+	width: 159px;
+	height: 119px;
+	margin: 3px 0px;
+	position: relative;
+}
+
+.p5 li .fbt3 {
+	width: 150px;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 3px 0px 3px 9px;
+	color: #ffffff;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	z-index: 2;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/jy3_03.png);
+}
+
+.p5 li .fbt3 b {
+	color: #ff0000;
+	display: block;
+	font-family: Arial;
+	font-weight: normal;
+}
+
+.fs1_2 {
+	width: 399px;
+	float: left;
+	height: 290px;
+	background: #ffffff;
+}
+
+.xx1 {
+	height: 45px;
+	line-height: 45px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/ns3_03.png);
+	width: 100%;
+	float: left;
+}
+
+.xx1 a.x1 {
+	display: inline-block;
+	padding: 0px 40px;
+	font-size: 18px;
+	color: #ffffff;
+	background: #f02222;
+	float: left;
+}
+
+.xx1 a.x2 {
+	display: inline-block;
+	padding: 0px 40px;
+	font-size: 18px;
+	color: #010101;
+	background: none;
+	float: left;
+}
+
+.fo_lb4 {
+	width: 340px;
+	float: left;
+	margin: 25px 0px 0px 30px;
+	border-bottom: dotted 1px #9e9d9d;
+	padding-bottom: 15px;
+}
+
+.fo_lb4 li {
+	width: 340px;
+	float: left;
+	margin-bottom: 13px;
+}
+
+.fo_lb4 .d1 {
+	width: 85px;
+	float: left;
+	text-align: center;
+}
+
+.fo_lb4 .d2 {
+	width: 254px;
+	float: right;
+}
+
+.fo_lb4 .tx5,
+.fo_lb4 .sel2 {
+	float: left;
+}
+
+.fo_lb4 .sl {
+	float: left;
+	border: solid 1px #dadada;
+}
+
+.tx5 {
+	width: 230px;
+	padding-left: 10px;
+	height: 24px;
+	line-height: 24px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/nsx14_13.jpg) right no-repeat;
+	border: solid 1px #dadada;
+}
+
+.sel2 {
+	width: 242px;
+	height: 26px;
+	line-height: 24px;
+	padding-left: 10px;
+	border: solid 1px #dadada;
+}
+
+.jgq {
+	width: 340px;
+	float: left;
+	margin: 20px 0px 0px 30px;
+}
+
+.jgq font {
+	float: left;
+}
+
+.jgq a.cd_an2 {
+	float: right;
+}
+
+.lb_fw3 {
+	width: 960px;
+	overflow: hidden;
+	margin-top: 30px;
+}
+
+.lb_fw3 ul {}
+
+.lb_fw3 li {
+	width: 240px;
+	height: 182px;
+	position: relative;
+	float: left;
+	margin-bottom: 1px;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.lb_fw3 li img {
+	width: 240px;
+	height: 182px;
+}
+
+.lb_fw3 li p.p_1 {
+	position: absolute;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/nsx6_07.png);
+	height: 38px;
+	line-height: 38px;
+	color: #ffffff;
+	bottom: 0px;
+	left: 0px;
+	padding-left: 10px;
+	width: 230px;
+	overflow: hidden;
+}
+
+.lb_fw3 li .fwbt {
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/nsx6_07.png);
+	width: 220px;
+	top: 182px;
+	height: 152px;
+	padding: 30px 10px 0px 10px;
+	color: #ffffff;
+	position: absolute;
+	left: 0px;
+	z-index: 2;
+}
+
+.lb_fw3 li .fwbt p {
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.fw_cs {
+	padding: 0px 0px 0px 0px;
+	height: 280px;
+	background: #eeeeee;
+}
+
+.fw_cs .tp {
+	width: 350px;
+	height: 280px;
+	float: right;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.fw_cs .tp img {
+	width: 350px;
+	height: 280px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1
+}
+
+.fw_cs .tp .fbt1 {
+	width: 338px;
+	padding-left: 12px;
+	font-size: 16px;
+	color: #ffffff;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	z-index: 2;
+	height: 35px;
+	line-height: 35px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/jy3_03.png);
+}
+
+.n8 {
+	float: left;
+	margin: 15px 0px 0px 20px;
+	width: 230px;
+}
+
+.n8 li {
+	height: 35px;
+	line-height: 35px;
+	border-bottom: solid 1px #e5e5e5;
+}
+
+.n8 li a {
+	display: block;
+	height: 35px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/nsx14_28.jpg) left no-repeat;
+	padding-left: 12px;
+	font-size: 16px;
+}
+
+.fw_cs .tp .fbt2 {
+	padding: 15px 20px;
+	width: 310px;
+	color: #333333;
+	line-height: 20px;
+	position: absolute;
+	top: 280px;
+}
+
+.p6 {
+	float: right;
+	width: 348px;
+}
+
+.p6 li {
+	width: 174px;
+	height: 140px;
+	float: left;
+	position: relative;
+}
+
+.p6 li .fbt {
+	width: 164px;
+	padding-left: 10px;
+	font-size: 16px;
+	color: #ffffff;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	z-index: 2;
+	height: 35px;
+	line-height: 35px;
+	background: url(http://static.niushoushan.net/niushoushan/images/Home/jy3_03.png);
+}
+
+
+/*弹窗用css*/
+
+.xyybox {
+	background: url(http://static.niushoushan.net/niushoushan/images/xyybox.png) no-repeat;
+	font-size: 16px;
+	color: #000000;
+	line-height: 20px;
+	font-family: "微软雅黑";
+	height: 253px;
+	width: 480px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	z-index: 10001;
+}
+
+.yyboxzhezhao {
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	opacity: 0.5;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 10000;
+}
+
+.xyybox b {
+	font-weight: bold;
+}
+
+.yyboxclose {
+	height: 39px;
+	width: 37px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+}
+
+.xyybox1_line1 {
+	position: absolute;
+	left: 25%;
+	top: 90px;
+	width: 85%;
+}
+
+.xyybox1_line2 {
+	position: absolute;
+	left: 25%;
+	top: 120px;
+	width: 85%;
+}
+
+.xyybox1_line3 {
+	position: absolute;
+	left: 40%;
+	top: 160px;
+	width: 20%;
+	height: 30px;
+	line-height: 30px;
+	background: #F00;
+	color: #FFFFFF;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+}
+
+.xyybox2_line1 {
+	position: absolute;
+	left: 25%;
+	top: 90px;
+	width: 75%;
+}
+
+.xyybox2_line2 {
+	position: absolute;
+	left: 25%;
+	top: 120px;
+	width: 75%;
+}
+
+.xyybox2_line3 {
+	position: absolute;
+	left: 25%;
+	top: 160px;
+	width: 20%;
+	height: 30px;
+	line-height: 30px;
+	background: #F00;
+	color: #FFFFFF;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+}
+
+.xyybox2_line3_2 {
+	position: absolute;
+	left: 50%;
+	top: 160px;
+	width: 20%;
+	height: 30px;
+	line-height: 30px;
+	background: #d2d3d5;
+	color: #000000;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+}
+
+.xyybox3_line1 {
+	position: absolute;
+	text-align: center;
+	top: 90px;
+	width: 100%;
+	font-size: 24px;
+}
+
+.xyybox3_line2 {
+	position: absolute;
+	left: 30%;
+	top: 140px;
+	width: 40%;
+	height: 30px;
+	line-height: 30px;
+	background: #F00;
+	color: #FFFFFF;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+}
+
+.xyybox4_line1 {
+	position: absolute;
+	text-align: left;
+	left: 10%;
+	top: 60px;
+	width: 85%;
+	line-height: 20px;
+}
+
+.xyybox4_line2 {
+	position: absolute;
+	text-align: center;
+	color: #000000;
+	left: 15%;
+	top: 90px;
+	width: 85%;
+}
+
+.xyybox4_line2 .span1 {
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	width: 20%;
+	height: 25px;
+	background: #d2d3d5;
+	left: 20px;
+	line-height: 25px;
+	font-size: 14px;
+	border: none;
+	text-align: center;
+	position: absolute;
+}
+
+.xyybox4_line2 .span2 {
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	width: 20%;
+	height: 25px;
+	background: #d2d3d5;
+	left: 20px;
+	line-height: 25px;
+	font-size: 14px;
+	border: none;
+	text-align: center;
+	position: absolute;
+	left: 30%;
+	background: #F00;
+	color: #FFFFFF;
+}
+
+.xyybox4_line2 .span3 {
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	width: 20%;
+	height: 25px;
+	background: #d2d3d5;
+	left: 20px;
+	line-height: 25px;
+	font-size: 14px;
+	border: none;
+	text-align: center;
+	position: absolute;
+	left: 55%;
+}
+
+.xyybox4_line3 {
+	position: absolute;
+	line-height: 20px;
+	text-align: left;
+	left: 10%;
+	top: 140px;
+	width: 85%;
+}
+
+.xyybox4_line3 .span4 {
+	position: absolute;
+	left: 80px;
+	top: -5px;
+	width: 90px;
+	height: 25px;
+	text-align: center;
+	border: 1px solid #CCCCCC;
+	display: block;
+}
+
+.xyybox4_line4 {
+	position: absolute;
+	cursor: pointer;
+	text-align: left;
+	left: 40%;
+	top: 180px;
+	width: 20%;
+	border: none;
+	height: 25px;
+	background: #F00;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.xyzm {
+	position: absolute;
+	left: 190px;
+	top: -3px;
+}
+
+
+/*8-27 新增部份*/
+
+.yd {
+	width: 100%;
+	background: #eeeeee;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	height: 340px;
+}
+
+.yd .imgk {
+	width: 518px;
+	float: left;
+}
+
+.yd .imgk img {
+	width: 518px;
+	height: 340px;
+}
+
+.yd .txtk {
+	width: 385px;
+	float: left;
+	margin: 40px 0px 0px 35px;
+	height: 210px;
+	color: #4e4e4e;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.yd .txtk .p_1 {
+	color: #000000;
+	font-family: 'qingke';
+	font-size: 24px;
+	padding-bottom: 8px;
+}
+
+.yd a.cd_yd {
+	float: left;
+	margin-left: 140px;
+}
+
+a.cd_yd {
+	height: 40px;
+	line-height: 40px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+	color: #ffffff;
+	background: #956134;
+	font-size: 18px;
+	padding: 0px 45px;
+	display: inline-block;
+}
+
+.dinner_hotel{
+	margin-top: 30px;
+}
+
+.zx1 .txtk2 {
+	width: 430px;
+	float: left;
+	margin: 10px 0px 0px 50px;
+	font-size: 14px;
+	color: #999999;
+	line-height: 26px;
+}
+
+.zx1 .txtk2 .p_1 {
+	color: #000000;
+	font-family: 'qingke';
+	font-size: 24px;
+	padding-bottom: 15px;
+}
+
+.zx1 .txtk2 .p_2 {
+	color: #000000;
+	font-size: 16px;
+	padding-bottom: 35px;
+}
+
+.zx1 .txtk2 .p_3 {
+	color: #000000;
+	font-size: 16px;
+}
+
+.yd_t {
+	width: 900px;
+	height: 40px;
+	line-height: 40px;
+	background: #f3f6f5;
+	color: #999999;
+	float: left;
+}
+
+.yd_t span {
+	float: left;
+	text-align: center;
+}
+
+.yd_t .s1 {
+	width: 375px;
+	margin-left: 60px;
+	text-align: left;
+}
+
+.yd_t .s2 {
+	width: 150px;
+}
+
+.yd_t .s3,
+.yd_t .s4 {
+	width: 105px;
+}
+
+.yd_t .s5 {
+	width: 105px;
+	float: right;
+}
+
+.yd_k {
+	width: 898px;
+	background: #ffffff;
+	border: solid 1px #dad5c7;
+	border-top: 0px;
+	float: left;
+}
+
+.lb20 {
+	width: 100%;
+	float: left;
+}
+
+.lb20 li {
+	border-top: solid 1px #dad5c7;
+	width: 100%;
+	float: left;
+	padding: 25px 0px;
+}
+
+.lb20 li span {
+	float: left;
+	text-align: center;
+	font-size: 13px;
+	height: 24px;
+	line-height: 24px;
+}
+
+.lb20 li .s1 {
+	width: 402px;
+	margin-left: 30px;
+	text-align: left;
+}
+
+.lb20 li .s1 a.cd_db {
+	background: url(../../images/order/x_n2_03.png) right no-repeat;
+	padding-right: 25px;
+	font-size: 16px;
+	color: #000000;
+	margin-left: 10px;
+}
+
+.lb20 li .s2 {
+	width: 150px;
+}
+
+.lb20 li .s3,
+.lb20 li .s4 {
+	width: 105px;
+}
+
+.lb20 li .s3 {
+	color: #999999;
+}
+
+.lb20 li .s4 {
+	color: #e31c41;
+}
+
+.lb20 li .s5 {
+	width: 105px;
+	float: right;
+}
+
+.lb20 li .lb20n {
+	position: relative;
+	display: none;
+	width: 815px;
+	float: left;
+	background: #f7f9f8;
+	border: solid 1px #dad5c7;
+	margin: 15px 0px 0px 20px;
+	padding: 15px 20px 40px 20px;
+	font-size: 14px;
+	color: #70442d;
+	line-height: 26px;
+}
+
+.lb20 li .lb20n i {
+	background: url(../../images/order/x_n2_07.png);
+	width: 15px;
+	height: 9px;
+	position: absolute;
+	top: -9px;
+	left: 70px;
+}
+
+.lb20 li .lb20n a.cd_db2 {
+	position: absolute;
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+	left: 0px;
+	bottom: 0px;
+	background: url(../../images/order/x_n2_11.png) #ededed center center no-repeat;
+}
+
+.an_xq1 {
+	width: 100%;
+	float: left;
+	text-align: center;
+	padding: 40px 0px 20px 0px;
+}
+
+#scroll_box3 {
+	width: 420px;
+	position: relative;
+	z-index: 0;
+	height: 273px;
+	overflow: hidden;
+}
+
+#scroll_box3 .box_163css {
+	width: 420px;
+	height: 273px;
+	position: relative;
+}
+
+#scroll_box3 .box_163css img {
+	display: block;
+	width: 420px;
+	height: 273px;
+}
+
+#scroll_box3 .box_163css li {
+	float: left;
+	display: inline;
+	width: 420px;
+	height: 273px;
+}
+
+#scroll_box3 .scroll_nav {
+	position: absolute;
+	z-index: 2;
+	bottom: 15px;
+	right: 10px;
+	height: 15px;
+}
+
+#scroll_box3 .scroll_nav li {
+	width: 15px;
+	height: 15px;
+	float: left;
+	margin-left: 5px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	/*float:left;*/
+	background: #b8b8b8;
+	cursor: pointer;
+	opacity: 0.5;
+	filter: "alpha(opacity=50)";
+	-ms-filter: "alpha(opacity=50)";
+}
+
+#scroll_box3 .scroll_nav li.current {
+	background: #ffffff;
+	opacity: 1;
+	filter: "alpha(opacity=100)";
+	-ms-filter: "alpha(opacity=100)";
+}
+
+.dx {
+	width: 100%;
+	float: left;
+	margin: 25px 0px;
+}
+
+.dx_bt {
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	float: left;
+	color: #be2a2e;
+	font-family: 'qingke';
+	font-size: 18px;
+}
+
+.dx_fo {
+	width: 100%;
+	float: left;
+	height: 28px;
+	line-height: 28px;
+	margin: 20px 0px 30px 0px;
+	font-size: 16px;
+}
+
+.dx_fo dl {
+	float: left;
+	height: 28px;
+	margin-right: 50px;
+}
+
+.dx_fo dt {
+	float: left;
+	width: 57px;
+}
+
+.dx_fo dd {
+	float: left;
+}
+
+.dx_fo .tx5 {
+	border: solid 1px #999999;
+}
+
+.dx_fo .sl {
+	border: solid 1px #927757;
+	height: 24px;
+	line-height: 24px;
+}
+
+.dx_fo .sl a.sl2 {
+	background: #927757;
+	color: #ffffff;
+	font-size: 20px;
+	height: 24px;
+	line-height: 24px;
+}
+
+.dx_fo .sl a.sl1 {
+	background: #f4f4f4;
+	color: #999999;
+	font-size: 20px;
+	height: 24px;
+	line-height: 24px;
+}
+
+.dx_fo .sl .sl3 {
+	background: #ffffff;
+	border: 0px;
+}
+
+.dx_fo .dl1 {
+	margin: 0px;
+	float: right;
+}
+
+.dx_fo .dl1 .zt_r2 {
+	font-size: 22px;
+	margin-left: 15px;
+}
+
+.dx_lb {
+	background: #f8f8f8;
+	border: solid 3px #eedfc9;
+	width: 830px;
+	float: left;
+	padding: 20px 0px 20px 45px;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.dx_lb li {
+	width: 100%;
+	float: left;
+	height: 22px;
+	margin: 10px 0px;
+}
+
+.dx_lb li span {
+	float: left;
+	height: 22px;
+}
+
+.dx_lb li .s1 {
+	width: 240px;
+	color: #666666;
+}
+
+.dx_lb li .s1 input {
+	margin-right: 10px;
+}
+
+.dx_lb li .sl {
+	margin: 0px;
+	float: left;
+}
+
+.dx_lb li .s2 {
+	color: #c40e24;
+	margin-left: 20px;
+}
+
+.dx_jg {
+	width: 100%;
+	float: left;
+	border-top: dotted 1px #bebebe;
+	font-size: 16px;
+	padding: 15px 0px;
+	text-align: right;
+	margin-top: 20px;
+}
+
+.dx_jg .zt_r2 {
+	font-size: 22px;
+	margin-left: 15px;
+}
+
+.dx_fo2 {
+	width: 900px;
+	float: left;
+	margin: 30px 0px 0px 0px;
+}
+
+.dx_fo2 li {
+	width: 100%;
+	float: left;
+	line-height: 28px;
+	margin-bottom: 12px;
+}
+
+.dx_fo2 .d1 {
+	float: left;
+	width: 150px;
+	text-align: right;
+}
+
+.dx_fo2 .d2 {
+	float: right;
+	width: 740px;
+}
+
+.dx_fo2 .tx4 {
+	height: 28px;
+	line-height: 28px;
+	border: solid 1px #cccccc;
+	width: 320px;
+	color: #666666;
+}
+
+.dx_lb2 {
+	float: left;
+	width: 100%;
+	margin: 30px 0px 0px 0px;
+}
+
+.dx_lb2 li {
+	float: left;
+	width: 100%;
+	height: 52px;
+	line-height: 52px;
+	margin-bottom: 45px;
+}
+
+.dx_lb2 .s1 {
+	float: left;
+	font-size: 18px;
+	width: 140px;
+}
+
+.dx_lb2 .s1 input {
+	margin-right: 12px;
+}
+
+.dx_lb2 .s2 {
+	float: left;
+	width: 220px;
+}
+
+.dx_lb2 .s3 {
+	float: left;
+	color: #999999;
+}
+
+.mp_bt2 {
+	width: 100%;
+	float: left;
+	background: #eeeeee;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #000000;
+}
+
+.mp_bt2 span {
+	float: left;
+	text-align: center;
+}
+
+.mp_bt2 .s1 {
+	width: 100px;
+	text-align: left;
+	margin-left: 30px;
+}
+
+.mp_bt2 .s2 {
+	width: 280px;
+}
+
+.mp_bt2 .s3 {
+	width: 90px;
+}
+
+.mp_bt2 .s4 {
+	width: 100px;
+}
+
+.mp_bt2 .s5 {
+	width: 100px;
+	text-align: left;
+	float: right;
+}
+
+.mp_lb {
+	width: 100%;
+	float: left;
+	background: #ffffff;
+	line-height: 28px;
+	color: #424141;
+	border: 1px solid #eeeeee; 
+}
+
+.mp_lb li {
+	width: 100%;
+	float: left;
+	padding: 20px 0px;
+}
+
+.mp_lb span {
+	float: left;
+	text-align: center;
+}
+
+.mp_lb .s1 {
+	width: 100px;
+	text-align: left;
+	margin-left: 30px;
+}
+
+.mp_lb .s1 input {
+	margin-right: 10px;
+}
+
+.mp_lb .s1 a {
+	margin-left: 10px;
+}
+
+.mp_lb .s2 {
+	width: 280px;
+}
+
+.mp_lb .s3 {
+	width: 90px;
+}
+
+.mp_lb .s4 {
+	width: 100px;
+}
+
+.mp_lb .s5 {
+	width: 100px;
+	text-align: left;
+	float: right;
+}
+
+.mp_lb .s5 a {
+	margin-right: 5px;
+}
+
+a.cd_a_d {
+	display: inline-block;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background: #ffffff;
+	border: solid 1px #dddddd;
+	padding: 0px 10px;
+	color: #956134;
+}
+
+a.cd_a_d:hover {
+	background: #f2f2f2;
+}
+
+a.cd_a_k {
+	display: inline-block;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background: #956134;
+	color: #ffffff;
+	border: solid 1px #956134;
+	padding: 0px 10px;
+}
+
+a.cd_a_k:hover {
+	background: #804919;
+}
+
+.fy3 {
+	width: 100%;
+	float: left;
+	margin-top: 20px;
+	text-align: right;
+}
+
+.fy3 a {
+	margin-left: 10px;
+}
+
+.zf {
+	padding: 40px 0px 30px 0px;
+}
+
+.zf1 {
+	width: 870px;
+	background: #ffffff;
+	margin-bottom: 10px;
+	float: left;
+	padding: 25px 40px;
+	border: solid 5px #eedfc9;
+	font-size: 14px;
+	line-height: 40px;
+}
+
+.zf1 .s1 {
+	float: left;
+}
+
+.zf1 .s1 .zt_r2 {
+	font-size: 24px;
+	margin-left: 15px;
+}
+
+.zf1 a.cd_a_r {
+	float: right;
+}
+
+.cd_a_r {
+	display: inline-block;
+	line-height: 40px;
+	padding: 0px 40px;
+	font-size: 18px;
+	background: #be2a2e;
+	color: #ffffff !important;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.cd_a_r:hover {
+	background: #ac0106;
+}
+
+.zf2 {
+	float: left;
+	padding: 30px;
+	width: 900px;
+	background: #ffffff;
+}
+
+.zf2 .bt3 {
+	width: 100%;
+	float: left;
+	font-size: 24px;
+	padding-bottom: 15px;
+	margin-bottom: 30px;
+}
+
+.zf2_1 {
+	width: 100%;
+	float: left;
+	line-height: 35px;
+	margin-bottom: 40px;
+}
+
+.zf2_1 .s1 {
+	color: #797878;
+	float: left;
+}
+
+.zf2_1 .s1 b {
+	font-weight: normal;
+	font-size: 24px;
+	color: #000000;
+}
+
+.zf2_1 .s2 {
+	float: right;
+}
+
+.zf2_1 .s2 .zt_r2 {
+	font-size: 24px;
+	margin-left: 15px;
+}
+
+.zf2_1 .s3 {
+	width: 100%;
+	float: left;
+	color: #797878;
+}
+
+.zf2_2 {
+	width: 100%;
+	float: left;
+	margin-bottom: 80px;
+}
+
+.zf2_2 .d1 {
+	width: 610px;
+	float: left;
+}
+
+.zf2_2 .d2 {
+	width: 130px;
+	float: right;
+}
+
+.zf2_2 .d2 a.cd_a_d {
+	display: block;
+	color: #000000;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	font-size: 15px;
+}
+
+.mp_bt3 {
+	width: 100%;
+	float: left;
+	background: #f3f6f5;
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	color: #a1a1a1;
+}
+
+.mp_bt3 span {
+	float: left;
+	text-align: center;
+}
+
+.mp_bt3 .s1 {
+	width: 240px;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.mp_bt3 .s2 {
+	width: 150px;
+}
+
+.mp_bt3 .s3 {
+	width: 100px;
+}
+
+.mp_bt3 .s4 {
+	width: 90px;
+	float: right;
+}
+
+.mp_lb3 {
+	width: 100%;
+	float: left;
+	line-height: 22px;
+	font-size: 14px;
+	color: #797878;
+}
+
+.mp_lb3 li {
+	width: 100%;
+	float: left;
+	border-bottom: dotted 1px #cdcdcd;
+	padding: 9px 0px;
+}
+
+.mp_lb3 span {
+	float: left;
+	text-align: center;
+}
+
+.mp_lb3 .s1 {
+	width: 240px;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.mp_lb3 .s1 a {
+	color: #797878;
+}
+
+.mp_lb3 .s1 a:hover {
+	color: #c40e24;
+}
+
+.mp_lb3 .s2 {
+	width: 150px;
+}
+
+.mp_lb3 .s3 {
+	width: 100px;
+}
+
+.mp_lb3 .s4 {
+	width: 90px;
+	float: right;
+	color: #c40e24;
+}
+
+.lc2 {
+	width: 610px;
+	height: 55px;
+	float: left;
+	margin-bottom: 30px;
+}
+
+.lc2 ul {
+	width: 610px;
+	background: url(../../images/order/nsx12_05.jpg);
+	height: 20px;
+	float: left;
+	margin-top: 0px;
+}
+
+.lc2 li {
+	width: 20px;
+	height: 20px;
+	float: left;
+	background: url(../../images/order/nsx12_07.jpg);
+	margin: 0px 65px;
+	position: relative;
+}
+
+.lc2 li p {
+	position: absolute;
+	height: 24px;
+	line-height: 24px;
+	width: 180px;
+	left: -79px;
+	top: 28px;
+	text-align: center;
+	font-size: 14px;
+	color: #363636;
+}
+
+.lc2 li.on {
+	background: url(../../images/order/nsx12_03.jpg);
+	color: #c20c11;
+}
+
+.zf_lb {
+	width: 610px;
+	float: left;
+	line-height: 30px;
+}
+
+.zf_lb dl {
+	width: 100%;
+	float: left;
+	height: 30px;
+}
+
+.zf_lb dt {
+	float: left;
+	color: #797878;
+	width: 70px;
+}
+
+.zf_lb dd {
+	float: left;
+	width: 540px;
+}
+
+.uploader-list {
+	margin-bottom: 10px;
+}
+
+.around{
+	margin: 30px auto;
+	padding-top: 30px ;
+	padding-bottom: 30px;
+}

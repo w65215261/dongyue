@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Manager Login</title> [#assign base=request.contextPath /]
+
+<link rel="stylesheet"
+	href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="${base}/css/login.css">
+
+<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+
+<script src="${base}/plugin/tooltip/tooltip.js"></script>
+<link rel="stylesheet" href="${base}/plugin/tooltip/tooltip.css">
+
+</head>
+<body onkeydown="iskeydown(event);">
+	<div class="container">
+
+		<div class="login login-label">
+
+			<div class="form-group center-block" style="width: 150px;">
+				<label class="h1">管理登陆</label>
+			</div>
+			<form class="form-horizontal" method="post">
+				<div class="container-fluid">
+					<div class="form-group form-group-lg">
+						<div class="input-group">
+							<span class="input-group-addon ">用户名</span> <input id="username"
+								name="username" class="form-control" type="text"
+								placeholder="Username">
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="form-group form-group-lg">
+						<div class="input-group">
+							<span class="input-group-addon">密&nbsp;&nbsp;&nbsp;&nbsp;码</span>
+							<input id="password" name="password" class="form-control"
+								type="password" placeholder="Password">
+						</div>
+					</div>
+				</div>
+			</form>
+
+		</div>
+	</div>
+	<script>
+		function iskeydown(event) {
+			if (event.keyCode == 13) {
+				check();
+			}
+		}
+		function check() {
+
+			var username = $("#username").val().trim();
+			var password = $("#password").val();
+
+			if (username == "") {
+				tooltip.pop($("#username")[0], '用户名不能为空！');
+				return;
+			} else if (username.length > 32) {
+				tooltip.pop($("#username")[0], '用户名长度应大于32位！');
+				return;
+			}
+
+			if (password == "") {
+				tooltip.pop($("#password")[0], '密码不能为空！');
+				return;
+			}
+
+			login(username, password);
+
+		}
+
+		function login(username, password) {
+			$.post("managerLogin", {
+				username : username,
+				password : password
+			}, function(r) {
+				if (r.code == 0)
+					window.location.href = "center";
+				else
+					alert(r.msg);
+			},'json');
+
+		}
+	</script>
+
+	<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+[#include "manage/common/head.html"/]
+
+</head>
+
+<body class="gray-bg">
+	<div class="wrapper wrapper-content animated fadeIn">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="ibox float-e-margins">
+					<div class="ibox-title">
+						<h5>banner轮播列表</h5>
+						<div class="ibox-tools">
+							<a class="collapse-link"> <i class="fa fa-plus"
+								data-title="添加" data-toggle="modal" data-target="#bannerModal">
+									添加</i>
+							</a>
+						</div>
+					</div>
+					<div class="ibox-content">
+
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>图片</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								[#list banners as banner]
+								<tr>
+									<td>${banner_index+1}</td>
+									<td><img alt="..." src="${base}/${banner.imgPath}"
+										height="100px;"></td>
+									<td>
+										<button class="btn btn-info" type="button" data-title="编辑" data-id=${banner.id}
+											data-toggle="modal" data-target="#bannerModal">编辑</button>
+										<button class="btn btn-warning" type="button" onclick="del(${banner.id})">删除</button>
+									</td>
+								</tr>
+								[/#list]
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                        <form class="form-horizontal m-t" id="commentForm">
+                            <div class="form-group">
+                                <label class="col-sm-1 control-label">首页内容：</label>
+                                <div class="col-sm-10">
+                              	 	<div id="summernote"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div style="text-align: center;">
+                                    <button id="save" class="btn btn-primary btn-lg" type="button">确定保存</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>                    
+                
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="bannerModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title" id="exampleModalLabel"></h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label class="control-label">图片:</label>
+						<div id="imgUpload1">
+							<div id="img1" class="uploader-list"></div>
+							<div id="progress1"></div>
+							<div id="filePicker1">选择图片</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-primary" id="saveBanner">保存</button>
+				</div>
+			</div>
+		</div>
+	[#include "manage/common/js.html" /]
+	<script>
+		var imgId = 0;
+		var id = 0;
+		
+		/* banner begin */
+		
+		$('#bannerModal').on('show.bs.modal', function(event) {
+			var button = $(event.relatedTarget);
+			var recipient = button.data('title');
+			var modal = $(this);
+			modal.find('.modal-title').text(recipient);
+			
+			if(recipient == "编辑"){
+				$.post("${base}/manage/banner/getBanner/"+button.data('id'),function(r){
+					imgId = r.banner.imgId;
+					id = r.banner.id;
+					$("#img1").html('<img src="${base}/'+r.banner.imgPath+'" alt="..." height="100px;"/>');
+				},'json')
+			}else{
+				id = 0;
+			}
+		});
+
+		var uploader1 = WebUploader.create({
+			auto : true,
+			swf : '${base}/plugin/webuploader/Uploader.swf',
+			server : '${base}/manage/upload',
+			pick : '#filePicker1',
+			method : "POST",
+			accept : {
+				title : 'Images',
+				extensions : 'gif,jpg,jpeg,bmp,png',
+				mimeTypes : 'image/*'
+			},
+			resize : false,
+			sendAsBinary : false,
+			fileNumLimit : 1
+		});
+
+		uploader1.on('fileQueued', function(file) {
+			uploader1.makeThumb(file, function(error, src) {
+				if (error) {
+					$img.replaceWith('<span>不能预览</span>');
+					return;
+				}
+				$("#img1").html('<img src="'+src+'" alt="..."/>');
+				$("#img1").addClass("img-show");
+			}, 100, 100);
+		});
+
+		uploader1.on('uploadProgress', function(file, percentage) {
+			var $li = $('#' + file.id), $percent = $li.find('.progress span');
+
+			if (!$percent.length) {
+				$percent = $('<p class="progress"><span></span></p>').appendTo(
+						$li).find('span');
+			}
+			$("#progress1").html(parseInt(percentage * 100) + '%');
+		});
+
+		uploader1.on('beforeFileQueued', function(file) {
+			uploader1.reset();
+		});
+
+		uploader1.on('uploadSuccess', function(file, r) {
+			imgId = r.file.id;
+			$('#' + file.id).addClass('upload-state-done');
+			$("#img1").append('<p>已上传</p>');
+		});
+
+		uploader1.on('uploadError', function(file) {
+			var $li = $('#' + file.id), $error = $li.find('div.error');
+
+			if (!$error.length) {
+				$error = $('<div class="error"></div>').appendTo($li);
+			}
+
+			$error.text('上传失败');
+		});
+
+		$("#saveBanner").click(function() {
+			if(imgId == 0){
+				swal("请上传图片");
+				return;
+			}
+			$.post("${base}/manage/banner/save", {
+				id : id,
+				title : "",
+				content : "",
+				banner : "",
+				imgId : imgId,
+				sort : 0
+			}, function(r) {
+				if (r.code == 0) {
+					location.reload();
+				} else
+					swal("保存失败！", r.msg, "error");
+			}, 'json')
+		});
+		
+		/* banner end */
+		
+		function del(id){
+			swal({
+				  title: '确定要删除吗?',
+				  type: 'warning',
+				  showCancelButton: true,
+				  cancelButtonColor: '#3085d6',
+				  confirmButtonColor: '#d33',
+				  confirmButtonText: '是的,确定!',
+				  cancelButtonText: '取消'
+				}).then(function () {
+					$.post("${base}/manage/banner/del/"+id,function(r){
+						if(r.code ==0)
+							location.reload();
+						else {
+							swal("删除失败！",r.msg,"error");
+						}
+					},'json')
+				})
+		}
+		var ids = ${indexContent.id ! 0};
+		
+		$(function() {
+	        $('#summernote').summernote({
+	        	height : 290,
+				lang: 'zh-CN',
+				fontNames: ['Microsoft YaHei', 'DengXian', '新宋体', '黑体'],
+				callbacks: {
+				    onImageUpload: function(files) {
+				    	 var formData = new FormData();
+				            formData.append('file',files[0]);
+				            $.ajax({
+				                url : '${base}/manage/upload',//后台文件上传接口
+				                type : 'POST',
+				                data : formData,
+				                dataType : 'json',
+				                processData : false,
+				                contentType : false,
+				                success : function(data) {
+				                    $('#summernote').summernote('insertImage','${base}/'+data.file.path,'img');
+				                }
+				            });
+				    }
+				}
+	        });
+	        [#if indexContent??]
+	        $('#summernote').summernote('code', '${indexContent.content}');
+	        [/#if]
+	    });
+		$("#save").click(function() {
+			$.post("${base}/manage/indexContent/save", {
+				id : ids,
+				content : $('#summernote').summernote('code')
+			}, function(r) {
+				if(r.code == 0)
+					swal("保存成功！");
+				else
+					swal("保存失败！",r.msg,"error");
+			}, 'json')
+		})
+	</script>
+</body>
+</html>

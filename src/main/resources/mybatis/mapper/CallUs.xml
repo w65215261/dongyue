@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hl.yt.manage.dao.CallUsManageDao">
+
+	<select id="getCallus" resultType="com.hl.yt.manage.dto.CallUsManageDTO">
+		select * from callus
+	</select>
+	<insert id="save">
+		insert into callus (content)
+		values (#{content})
+	</insert>
+
+	<update id="update">
+		UPDATE callus SET content = #{content}
+		 WHERE id= #{id}
+	</update>
+</mapper>

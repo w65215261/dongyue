@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+[#include "manage/common/head.html"/]
+
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                        <form class="form-horizontal m-t" id="commentForm">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">加盟代理内容：</label>
+                                <div class="col-sm-9">
+                              	 	<div id="summernote"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div style="text-align: center;">
+                                    <button id="save" class="btn btn-primary btn-lg" type="button">确定保存</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>                    
+                
+			</div>
+		</div>
+	</div>
+   	[#include "manage/common/js.html" /]
+   	<script>
+		var id = ${agent.id ! 0};
+	
+		$(function() {
+	        $('#summernote').summernote({
+	        	height : 290,
+				lang: 'zh-CN',
+				fontNames: ['Microsoft YaHei', 'DengXian', '新宋体', '黑体'],
+				callbacks: {
+				    onImageUpload: function(files) {
+				    	 var formData = new FormData();
+				            formData.append('file',files[0]);
+				            $.ajax({
+				                url : '${base}/manage/upload',//后台文件上传接口
+				                type : 'POST',
+				                data : formData,
+				                dataType : 'json',
+				                processData : false,
+				                contentType : false,
+				                success : function(data) {
+				                    $('#summernote').summernote('insertImage','${base}/'+data.file.path,'img');
+				                }
+				            });
+				    }
+				}
+	        });
+	        [#if agent??]
+	        $('#summernote').summernote('code', '${agent.content}');
+	        [/#if]
+	    });
+		
+		$("#save").click(function() {
+			$.post("${base}/manage/agent/save", {
+				id : id,
+				content : $('#summernote').summernote('code')
+			}, function(r) {
+				if(r.code == 0)
+					swal("保存成功！");
+				else
+					swal("保存失败！",r.msg,"error");
+			}, 'json')
+		})
+		
+	</script>
+</body>
+</html>

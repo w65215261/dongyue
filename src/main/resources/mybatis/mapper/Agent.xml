@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hl.yt.manage.dao.AgentManageDao">
+
+	<select id="getAgent" resultType="com.hl.yt.manage.dto.AgentManageDTO">
+		select * from agent
+	</select>
+	<insert id="save">
+		insert into agent (content)
+		values (#{content})
+	</insert>
+
+	<update id="update">
+		UPDATE agent SET content = #{content}
+		 WHERE id= #{id}
+	</update>
+</mapper>

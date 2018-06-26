@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		[#include "client/common/head.html"/]
+		
+	</head>
+	<body>
+		<div class="banner-silder">
+			<div class="header-w3l">
+				<div class="header">
+					<div class="agileinfo_social_icons" id="nava">
+						<ul id="m_nav_list" class="m_nav menu__list">
+							<li class="m_nav_item active" id="m_nav_item_1"><a
+								href="${base}/" class="link link--kumya"><i
+									class="fa fa-home" aria-hidden="true"></i><span
+									data-letters="首页">首页</span></a></li>
+							<li class="m_nav_item" id="moble_nav_item_2"><a
+								href="${base}/jiamengdaili/index.html" class="link link--kumya"><i
+									class="fa fa-tree" aria-hidden="true"></i><span
+									data-letters="加盟代理">加盟代理</span></a></li>
+							<li class="m_nav_item" id="moble_nav_item_3"><a
+								href="${base}/lianxiwomen/index.html" class="link link--kumya"><i
+									class="fa fa-phone" aria-hidden="true"></i><span
+									data-letters="联系我们">联系我们</span></a></li>
+							<li class="m_nav_item" id="moble_nav_item_4"><a
+								href="${base}/shouquanchaxun/index.html" class="link link--kumya"><i
+									class="fa fa-spinner" aria-hidden="true"></i><span
+									data-letters="授权查询">授权查询</span></a></li>
+						</ul>
+					</div>
+
+				</div>
+	
+			</div>
+			<div class="banner">
+				<ul>
+					<!-- <ul>
+				<li style="background-image: url(${base}/upload/banner11.png);"></li>
+				<li style="background-image: url(${base}/upload/banner22.png);"></li>
+			</ul> -->
+					[#list banners as banner]
+					<li style="background-image: url('${base}/${banner.bannerPath}');"></li>
+					[/#list]
+				</ul>
+			</div>
+		</div>
+	
+		<div class="about-w3layouts-agileinfo">
+			<div class="container">
+				<div class="about-top w3ls-agile">
+					<div class="col-sm-6 red-w3l">
+						<div class="red-w3l-images">
+							<img class="img-responsive" src="${base}/img/zhutu.jpg" alt="">
+							<div class="position-w3l"></div>
+						</div>
+					</div>
+					<div class="col-sm-6 come">
+						<div class="about-wel">
+							${content.content}
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	
+		[#include "client/common/foot.html" /]
+		[#include "client/common/js.html" /]
+	
+		<script type="text/javascript">
+			$(function() {
+				$('.banner').unslider({
+					speed:500,
+					delay:3000,
+					arrows: false,
+					fluid: true,
+					dots: true
+				})
+			});
+			var navigation = responsiveNav("#nava",{label: "菜单"});
+			
+		</script>
+	</body>
+</html>

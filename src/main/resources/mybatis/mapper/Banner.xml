@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hl.yt.manage.dao.BannerDao">
+
+	<insert id="save">
+		insert into banner (title,content,img_id,banner) values (#{title},#{content},#{imgId},#{banner})
+	</insert>
+
+	<delete id="del">
+		delete from banner where id =#{id}
+	</delete>
+	
+	<update id="update">
+		update banner set title=#{title},content=#{content},img_id=#{imgId},banner=#{banner}
+		where id=#{id}
+	</update>
+	
+	<select id="getBannerList" resultType="com.hl.yt.manage.dto.BannerDTO">
+		select b.*,f.path imgPath from banner b left join file f on b.img_id=f.id order by b.id
+	</select>
+	
+	<select id="getBanner" resultType="com.hl.yt.manage.dto.BannerDTO">
+		select b.*,f.path imgPath from banner b left join file f on b.img_id=f.id where b.id=#{id}
+	</select>
+</mapper>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hl.yt.manage.dao.AuthorizeManageDao">
+
+	<select id="getAuthorizes" resultType="com.hl.yt.manage.dto.AuthorizeManageDTO">
+		select
+		id,name,code,wechat_number,phone_number,address,proxy_level,start_date,end_date,create_time
+		from
+		authorize where deflag = '0' limit #{start},#{pageSize}
+	</select>
+
+	<select id="getAuthorize" resultType="com.hl.yt.manage.dto.AuthorizeManageDTO">
+		select * from authorize
+		where id=#{id}
+	</select>
+	
+	<select id="getCodes" resultType="com.hl.yt.manage.dto.AuthorizeManageDTO">
+		select code from authorize
+	</select>
+
+	<select id="getAuthorizeCount" resultType="int">
+		select count(0) from
+		authorize
+	</select>
+
+	<insert id="save">
+		insert into authorize
+		(name,code,wechat_number,phone_number,address,proxy_level,start_date,end_date,deflag)
+		values
+		(#{name},#{code},#{wechatNumber},#{phoneNumber},#{address},#{proxyLevel},#{startDate},#{endDate},'0')
+	</insert>
+
+	<update id="update">
+		UPDATE authorize SET
+		 name = #{name},
+		 wechat_number = #{wechatNumber},
+		 phone_number = #{phoneNumber},
+		 address = #{address},
+		 proxy_level = #{proxyLevel},
+		 start_date = #{startDate},
+		 end_date = #{endDate}
+		 WHERE
+		  id = #{id}
+	</update>
+	
+	<update id="del">
+		UPDATE authorize SET
+		 deflag = '1'
+		  WHERE
+		  id = #{id}
+	</update>
+</mapper>

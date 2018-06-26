@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hl.yt.client.dao.AuthorizeDao">
+
+	<select id="getAuthorizes" resultType="com.hl.yt.client.dto.AuthorizeDTO">
+		select
+		id,name,code,wechat_number,phone_number,address,proxy_level,start_date,end_date from authorize
+		<if test="parameter!=null and parameter!=''">
+             where wechat_number = #{parameter} and deflag = 0
+        </if>
+	</select>
+
+</mapper>
